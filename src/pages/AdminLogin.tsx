@@ -80,7 +80,7 @@ const AdminLogin = () => {
           <Card>
             <CardHeader className="text-center">
               <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-rover-green" />
+                <Shield className="w-12 h-12 text-dogwalking-green" />
               </div>
               <CardTitle className="text-2xl">Accès Test Admin</CardTitle>
               <CardDescription>
@@ -98,12 +98,12 @@ const AdminLogin = () => {
                     onClick={() => handleRoleSelect('owner')}
                     className={`p-4 border rounded-lg cursor-pointer transition-all ${
                       selectedRole === 'owner' 
-                        ? 'border-rover-green bg-rover-green/5' 
+                        ? 'border-dogwalking-green bg-dogwalking-green/5' 
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                   >
                     <div className="flex items-center space-x-3">
-                      <User className="w-8 h-8 text-rover-green" />
+                      <User className="w-8 h-8 text-dogwalking-green" />
                       <div className="flex-1">
                         <h3 className="font-medium text-gray-900">Propriétaire d'Animal</h3>
                         <p className="text-sm text-gray-600">Cherche des services pour son animal</p>
@@ -118,12 +118,12 @@ const AdminLogin = () => {
                     onClick={() => handleRoleSelect('sitter')}
                     className={`p-4 border rounded-lg cursor-pointer transition-all ${
                       selectedRole === 'sitter' 
-                        ? 'border-rover-green bg-rover-green/5' 
+                        ? 'border-dogwalking-green bg-dogwalking-green/5' 
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                   >
                     <div className="flex items-center space-x-3">
-                      <Dog className="w-8 h-8 text-rover-green" />
+                      <Dog className="w-8 h-8 text-dogwalking-green" />
                       <div className="flex-1">
                         <h3 className="font-medium text-gray-900">Pet Sitter</h3>
                         <p className="text-sm text-gray-600">Offre des services de garde d'animaux</p>
@@ -171,7 +171,7 @@ const AdminLogin = () => {
                     </p>
                   </div>
 
-                  <Button type="submit" className="w-full rover-button-primary">
+                  <Button type="submit" className="w-full dogwalking-button-primary">
                     Se connecter en tant que {testAccounts[selectedRole].name}
                   </Button>
                 </form>

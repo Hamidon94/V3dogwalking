@@ -71,7 +71,7 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       description: "Réponse sous 24h",
-      value: "support@rover.fr", 
+      value: "support@dogwalking.fr", 
       action: "email"
     }
   ];
@@ -100,7 +100,7 @@ const Contact = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Contactez-nous
@@ -126,9 +126,9 @@ const Contact = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {contactMethods.map((method, index) => (
-                <div key={index} className="rover-card p-8 text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                <div key={index} className="dogwalking-card p-8 text-center">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {method.icon}
                     </div>
                   </div>
@@ -141,11 +141,11 @@ const Contact = () => {
                     {method.description}
                   </p>
 
-                  <div className="font-medium text-rover-green mb-6">
+                  <div className="font-medium text-dogwalking-green mb-6">
                     {method.value}
                   </div>
 
-                  <Button className="rover-button-secondary w-full">
+                  <Button className="dogwalking-button-secondary w-full">
                     {method.action === 'chat' && 'Démarrer le chat'}
                     {method.action === 'phone' && 'Appeler maintenant'}
                     {method.action === 'email' && 'Envoyer un email'}
@@ -157,7 +157,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Form */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Form */}
@@ -166,7 +166,7 @@ const Contact = () => {
                   Envoyez-nous un message
                 </h2>
                 
-                <div className="rover-card p-8">
+                <div className="dogwalking-card p-8">
                   {success ? (
                     <div className="text-center py-8">
                       <div className="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
@@ -188,12 +188,12 @@ const Contact = () => {
                           id="category"
                           value={formData.category}
                           onChange={(e) => setFormData(prev => ({ ...prev, category: e.target.value }))}
-                          className="rover-input w-full mt-2"
+                          className="dogwalking-input w-full mt-2"
                         >
                           <option value="general">Question générale</option>
                           <option value="booking">Problème de réservation</option>
                           <option value="payment">Question de paiement</option>
-                          <option value="safety">Sécurité et Rover Guarantee</option>
+                          <option value="safety">Sécurité et DogWalking Guarantee</option>
                           <option value="sitter">Devenir pet sitter</option>
                           <option value="technical">Problème technique</option>
                         </select>
@@ -209,7 +209,7 @@ const Contact = () => {
                             required
                             value={formData.firstName}
                             onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
-                            className="rover-input mt-2"
+                            className="dogwalking-input mt-2"
                             placeholder="Jean"
                           />
                         </div>
@@ -221,7 +221,7 @@ const Contact = () => {
                             required
                             value={formData.lastName}
                             onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
-                            className="rover-input mt-2"
+                            className="dogwalking-input mt-2"
                             placeholder="Dupont"
                           />
                         </div>
@@ -236,7 +236,7 @@ const Contact = () => {
                           required
                           value={formData.email}
                           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                          className="rover-input mt-2"
+                          className="dogwalking-input mt-2"
                           placeholder="jean.dupont@email.com"
                         />
                       </div>
@@ -250,7 +250,7 @@ const Contact = () => {
                           required
                           value={formData.subject}
                           onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
-                          className="rover-input mt-2"
+                          className="dogwalking-input mt-2"
                           placeholder="Résumé de votre demande"
                         />
                       </div>
@@ -263,7 +263,7 @@ const Contact = () => {
                           required
                           value={formData.message}
                           onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                          className="rover-input mt-2"
+                          className="dogwalking-input mt-2"
                           rows={6}
                           placeholder="Décrivez votre demande en détail..."
                         />
@@ -273,7 +273,7 @@ const Contact = () => {
                       <Button
                         type="submit"
                         disabled={loading}
-                        className="rover-button-secondary w-full"
+                        className="dogwalking-button-secondary w-full"
                       >
                         {loading ? (
                           "Envoi en cours..."
@@ -295,12 +295,12 @@ const Contact = () => {
                   Nos bureaux
                 </h2>
                 
-                <div className="rover-card p-8 mb-8">
+                <div className="dogwalking-card p-8 mb-8">
                   <div className="space-y-6">
                     {officeInfo.map((info, index) => (
                       <div key={index} className="flex items-start space-x-4">
-                        <div className="w-10 h-10 bg-rover-green/10 rounded-full flex items-center justify-center flex-shrink-0">
-                          <div className="text-rover-green">
+                        <div className="w-10 h-10 bg-dogwalking-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                          <div className="text-dogwalking-green">
                             {info.icon}
                           </div>
                         </div>
@@ -338,7 +338,7 @@ const Contact = () => {
             <p className="text-gray-600 mb-6">
               Consultez notre centre d'aide pour les questions fréquentes
             </p>
-            <Button className="rover-button-primary">
+            <Button className="dogwalking-button-primary">
               Visiter le centre d'aide
             </Button>
           </div>

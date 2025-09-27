@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
       name: "Sarah M.",
       location: "Paris, France",
       rating: 5,
-      text: "Rover a changé ma vie ! Je peux maintenant voyager l'esprit tranquille en sachant que mon chien Max est entre de bonnes mains. Les pet sitters sont incroyables !",
+      text: "DogWalking a changé ma vie ! Je peux maintenant voyager l'esprit tranquille en sachant que mon chien Max est entre de bonnes mains. Les pet sitters sont incroyables !",
       petName: "Max",
       petType: "Golden Retriever"
     },
@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
       name: "Marie C.",
       location: "Marseille, France",
       rating: 5,
-      text: "Grâce à Rover, j'ai trouvé le promeneur parfait pour mon bouledogue. Charlie adore ses promenades quotidiennes et revient toujours fatigué et heureux !",
+      text: "Grâce à DogWalking, j'ai trouvé le promeneur parfait pour mon bouledogue. Charlie adore ses promenades quotidiennes et revient toujours fatigué et heureux !",
       petName: "Charlie",
       petType: "Bouledogue Français"
     },
@@ -49,17 +49,17 @@ const TestimonialsSection = () => {
             Ce que disent nos clients
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Rejoignez des milliers de propriétaires d'animaux satisfaits qui font confiance à Rover
+            Rejoignez des milliers de propriétaires d'animaux satisfaits qui font confiance à DogWalking
           </p>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="rover-card p-6">
+            <div key={testimonial.id} className="dogwalking-card p-6">
               {/* Quote Icon */}
               <div className="mb-4">
-                <Quote className="w-8 h-8 text-rover-green/30" />
+                <Quote className="w-8 h-8 text-dogwalking-green/30" />
               </div>
 
               {/* Stars */}
@@ -86,7 +86,7 @@ const TestimonialsSection = () => {
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm font-medium text-rover-green">
+                    <p className="text-sm font-medium text-dogwalking-green">
                       Propriétaire de {testimonial.petName}
                     </p>
                     <p className="text-xs text-gray-500">

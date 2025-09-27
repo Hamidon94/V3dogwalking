@@ -13,7 +13,7 @@ const HouseSitting = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="relative py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
             style={{ backgroundImage: `url(${dogBoardingImage})` }}
@@ -38,7 +38,7 @@ const HouseSitting = () => {
                     <Link to="/services/boarding" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Hébergement • chez le pet sitter
                     </Link>
-                    <span className="px-4 py-2 bg-rover-green text-white rounded-full text-sm">
+                    <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
                       Garde à domicile • chez vous
                     </span>
                     <Link to="/services/drop-in-visits" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
@@ -72,8 +72,8 @@ const HouseSitting = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                  <Home className="w-8 h-8 text-rover-green" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                  <Home className="w-8 h-8 text-dogwalking-green" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Confort de la maison
@@ -84,8 +84,8 @@ const HouseSitting = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                  <Shield className="w-8 h-8 text-rover-green" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                  <Shield className="w-8 h-8 text-dogwalking-green" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Sécurité de votre domicile
@@ -96,8 +96,8 @@ const HouseSitting = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-rover-green" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                  <Heart className="w-8 h-8 text-dogwalking-green" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   Attention personnalisée
@@ -111,7 +111,7 @@ const HouseSitting = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Partez l'esprit tranquille
@@ -121,7 +121,7 @@ const HouseSitting = () => {
             </p>
             
             <Link to="/search?serviceType=house-sitting">
-              <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+              <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
                 Trouver un pet sitter
               </Button>
             </Link>

@@ -37,7 +37,7 @@ const SitterProfile = () => {
     joinDate: "2022",
     responseTime: "< 1 heure",
     verified: true,
-    rover_approved: true,
+    dogwalking_approved: true,
     services: [
       { name: "Promenade de chien", price: "25€", duration: "30 min" },
       { name: "Garde à domicile", price: "45€", duration: "nuit" },
@@ -105,7 +105,7 @@ const SitterProfile = () => {
                       <AvatarFallback className="text-2xl">{sitter.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                     {sitter.verified && (
-                      <div className="absolute -bottom-2 -right-2 bg-rover-green text-white rounded-full p-2">
+                      <div className="absolute -bottom-2 -right-2 bg-dogwalking-green text-white rounded-full p-2">
                         <Shield className="w-4 h-4" />
                       </div>
                     )}
@@ -127,10 +127,10 @@ const SitterProfile = () => {
                           </div>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                          {sitter.rover_approved && (
-                            <Badge variant="default" className="bg-rover-green">
+                          {sitter.dogwalking_approved && (
+                            <Badge variant="default" className="bg-dogwalking-green">
                               <Zap className="w-3 h-3 mr-1" />
-                              Rover Approuvé
+                              DogWalking Approuvé
                             </Badge>
                           )}
                           <Badge variant="secondary">
@@ -203,7 +203,7 @@ const SitterProfile = () => {
                       <div>
                         <h4 className="font-medium mb-2">Vérifications</h4>
                         <div className="flex items-center gap-2">
-                          <Shield className="w-4 h-4 text-rover-green" />
+                          <Shield className="w-4 h-4 text-dogwalking-green" />
                           <span className="text-sm text-muted-foreground">Vérification des antécédents</span>
                         </div>
                       </div>
@@ -223,7 +223,7 @@ const SitterProfile = () => {
                             <p className="text-muted-foreground">{service.duration}</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-rover-green">{service.price}</p>
+                            <p className="text-2xl font-bold text-dogwalking-green">{service.price}</p>
                             <Button size="sm" className="mt-2">Réserver</Button>
                           </div>
                         </div>
@@ -303,7 +303,7 @@ const SitterProfile = () => {
                     <Badge 
                       key={day} 
                       variant={sitter.availability.includes(day) ? "default" : "secondary"}
-                      className={sitter.availability.includes(day) ? "bg-rover-green" : ""}
+                      className={sitter.availability.includes(day) ? "bg-dogwalking-green" : ""}
                     >
                       {day}
                     </Badge>

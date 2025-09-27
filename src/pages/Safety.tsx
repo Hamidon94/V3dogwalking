@@ -27,7 +27,7 @@ const Safety = () => {
     }
   ];
 
-  const roverGuarantee = [
+  const dogwalkingGuarantee = [
     {
       title: "Couverture vétérinaire",
       description: "Jusqu'à 25 000€ de remboursement pour les soins vétérinaires d'urgence pendant la garde",
@@ -81,11 +81,11 @@ const Safety = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <div className="w-20 h-20 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                <Shield className="w-10 h-10 text-rover-green" />
+              <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                <Shield className="w-10 h-10 text-dogwalking-green" />
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -115,8 +115,8 @@ const Safety = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {safetyFeatures.map((feature, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {feature.icon}
                     </div>
                   </div>
@@ -134,12 +134,12 @@ const Safety = () => {
           </div>
         </section>
 
-        {/* Rover Guarantee */}
-        <section className="py-20 bg-rover-gray-light">
+        {/* DogWalking Guarantee */}
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                La Rover Guarantee
+                La DogWalking Guarantee
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Une protection complète pour chaque réservation. Parce que votre animal mérite ce qu'il y a de mieux.
@@ -147,9 +147,9 @@ const Safety = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {roverGuarantee.map((item, index) => (
-                <div key={index} className="rover-card p-8 text-center">
-                  <div className="text-3xl font-bold text-rover-green mb-4">
+              {dogwalkingGuarantee.map((item, index) => (
+                <div key={index} className="dogwalking-card p-8 text-center">
+                  <div className="text-3xl font-bold text-dogwalking-green mb-4">
                     {item.amount}
                   </div>
                   
@@ -165,8 +165,8 @@ const Safety = () => {
             </div>
 
             <div className="text-center mt-12">
-              <Button className="rover-button-secondary">
-                En savoir plus sur la Rover Guarantee
+              <Button className="dogwalking-button-secondary">
+                En savoir plus sur la DogWalking Guarantee
               </Button>
             </div>
           </div>
@@ -186,7 +186,7 @@ const Safety = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {safetyTips.map((section, index) => (
-                <div key={index} className="rover-card p-6">
+                <div key={index} className="dogwalking-card p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-6">
                     {section.category}
                   </h3>
@@ -194,7 +194,7 @@ const Safety = () => {
                   <ul className="space-y-4">
                     {section.tips.map((tip, tipIndex) => (
                       <li key={tipIndex} className="flex items-start space-x-3">
-                        <CheckCircle className="w-5 h-5 text-rover-green flex-shrink-0 mt-0.5" />
+                        <CheckCircle className="w-5 h-5 text-dogwalking-green flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{tip}</span>
                       </li>
                     ))}
@@ -206,7 +206,7 @@ const Safety = () => {
         </section>
 
         {/* Emergency Contact */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="w-16 h-16 mx-auto mb-6 bg-red-100 rounded-full flex items-center justify-center">
               <AlertTriangle className="w-8 h-8 text-red-600" />
@@ -221,9 +221,9 @@ const Safety = () => {
               en cas de problème avec votre animal.
             </p>
 
-            <div className="rover-card p-8 max-w-md mx-auto">
+            <div className="dogwalking-card p-8 max-w-md mx-auto">
               <div className="flex items-center justify-center space-x-3 mb-4">
-                <Phone className="w-6 h-6 text-rover-green" />
+                <Phone className="w-6 h-6 text-dogwalking-green" />
                 <span className="text-2xl font-bold text-gray-900">
                   01 23 45 67 89
                 </span>
@@ -233,7 +233,7 @@ const Safety = () => {
                 Ligne d'urgence disponible 24h/24
               </p>
               
-              <Button className="rover-button-primary w-full">
+              <Button className="dogwalking-button-primary w-full">
                 Contacter le support d'urgence
               </Button>
             </div>
@@ -245,7 +245,7 @@ const Safety = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Réservez en toute sécurité
@@ -254,7 +254,7 @@ const Safety = () => {
               Trouvez le pet sitter parfait avec la garantie de nos standards de sécurité
             </p>
             
-            <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+            <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
               Commencer ma recherche
             </Button>
           </div>

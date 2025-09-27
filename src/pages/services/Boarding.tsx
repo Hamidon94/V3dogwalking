@@ -21,7 +21,7 @@ const Boarding = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Sécurité et tranquillité d'esprit",
-      description: "Tous nos pet sitters sont vérifiés et couverts par la Rover Guarantee jusqu'à 25 000 € en soins vétérinaires."
+      description: "Tous nos pet sitters sont vérifiés et couverts par la DogWalking Guarantee jusqu'à 25 000 € en soins vétérinaires."
     }
   ];
 
@@ -40,7 +40,7 @@ const Boarding = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="relative py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
             style={{ backgroundImage: `url(${dogBoardingImage})` }}
@@ -64,7 +64,7 @@ const Boarding = () => {
                     Découvrez d'autres services :
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-4 py-2 bg-rover-green text-white rounded-full text-sm">
+                    <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
                       Hébergement • chez le pet sitter
                     </span>
                     <Link to="/services/house-sitting" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
@@ -122,7 +122,7 @@ const Boarding = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Pourquoi choisir l'hébergement Rover ?
+                Pourquoi choisir l'hébergement DogWalking ?
               </h2>
               <p className="text-xl text-gray-600">
                 Une alternative chaleureuse et personnalisée aux chenils traditionnels
@@ -132,8 +132,8 @@ const Boarding = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {benefits.map((benefit, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {benefit.icon}
                     </div>
                   </div>
@@ -150,14 +150,14 @@ const Boarding = () => {
             </div>
 
             {/* Features Grid */}
-            <div className="rover-card p-8">
+            <div className="dogwalking-card p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
                 Ce qui est inclus dans l'hébergement
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="w-5 h-5 bg-rover-green rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-5 h-5 bg-dogwalking-green rounded-full flex items-center justify-center flex-shrink-0">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -171,7 +171,7 @@ const Boarding = () => {
         </section>
 
         {/* How It Works Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -206,7 +206,7 @@ const Boarding = () => {
                 }
               ].map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-blue rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue rounded-full flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">
                       {step.step}
                     </span>
@@ -225,7 +225,7 @@ const Boarding = () => {
 
             <div className="text-center mt-12">
               <Link to="/search?serviceType=boarding">
-                <Button className="rover-button-secondary px-8 py-4 text-lg">
+                <Button className="dogwalking-button-secondary px-8 py-4 text-lg">
                   Trouver un hébergement
                 </Button>
               </Link>
@@ -246,9 +246,9 @@ const Boarding = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="rover-card p-6 text-center">
+              <div className="dogwalking-card p-6 text-center">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Hébergement Standard</h3>
-                <div className="text-3xl font-bold text-rover-green mb-2">25-40€</div>
+                <div className="text-3xl font-bold text-dogwalking-green mb-2">25-40€</div>
                 <p className="text-gray-600 mb-4">par nuit</p>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li>Hébergement chez le pet sitter</li>
@@ -257,12 +257,12 @@ const Boarding = () => {
                 </ul>
               </div>
 
-              <div className="rover-card p-6 text-center border-2 border-rover-green relative">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-rover-green text-white px-4 py-1 rounded-full text-sm">
+              <div className="dogwalking-card p-6 text-center border-2 border-dogwalking-green relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-dogwalking-green text-white px-4 py-1 rounded-full text-sm">
                   Populaire
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Hébergement Premium</h3>
-                <div className="text-3xl font-bold text-rover-green mb-2">40-60€</div>
+                <div className="text-3xl font-bold text-dogwalking-green mb-2">40-60€</div>
                 <p className="text-gray-600 mb-4">par nuit</p>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li>Tout du standard +</li>
@@ -272,9 +272,9 @@ const Boarding = () => {
                 </ul>
               </div>
 
-              <div className="rover-card p-6 text-center">
+              <div className="dogwalking-card p-6 text-center">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Hébergement Luxe</h3>
-                <div className="text-3xl font-bold text-rover-green mb-2">60€+</div>
+                <div className="text-3xl font-bold text-dogwalking-green mb-2">60€+</div>
                 <p className="text-gray-600 mb-4">par nuit</p>
                 <ul className="text-sm text-gray-600 space-y-2">
                   <li>Service 5 étoiles</li>
@@ -288,7 +288,7 @@ const Boarding = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Offrez à votre animal des vacances qu'il mérite
@@ -299,12 +299,12 @@ const Boarding = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/search?serviceType=boarding">
-                <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+                <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
                   Réserver maintenant
                 </Button>
               </Link>
               <Link to="/become-sitter">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rover-green px-8 py-4 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
                   Devenir pet sitter
                 </Button>
               </Link>

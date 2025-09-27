@@ -2,83 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Rover Design System - All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL format to match Rover.com design.
+/* DogWalking Design System - All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL format to match blue and white theme.
 */
 
 @layer base {
   :root {
-    /* Rover Brand Colors */
+    /* DogWalking Brand Colors - Blue and White Theme */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
-    --rover-green: 159 100% 39%; /* #00C896 - Rover primary green */
-    --rover-green-dark: 159 100% 32%; /* Darker green for hover states */
-    --rover-blue: 214 98% 60%; /* #4285F4 - CTA button blue */
-    --rover-blue-dark: 214 98% 50%; /* Darker blue for hover */
-    --rover-gray-light: 210 10% 96%; /* Light gray backgrounds */
-    --rover-gray: 215 16% 47%; /* Text gray */
-    --rover-gray-dark: 222 13% 26%; /* Dark text */
-    --rover-orange: 25 95% 53%; /* Accent orange */
-    --rover-red: 0 84% 60%; /* Error/destructive */
+    --dogwalking-blue: 214 100% 50%; /* #0080FF - Primary blue */
+    --dogwalking-blue-dark: 214 100% 40%; /* Darker blue for hover states */
+    --dogwalking-blue-light: 214 100% 95%; /* Light blue backgrounds */
+    --dogwalking-blue-medium: 214 50% 70%; /* Medium blue for accents */
+    --dogwalking-white: 0 0% 100%; /* Pure white */
+    --dogwalking-gray-light: 210 10% 96%; /* Light gray backgrounds */
+    --dogwalking-gray: 215 16% 47%; /* Text gray */
+    --dogwalking-gray-dark: 222 13% 26%; /* Dark text */
+    --dogwalking-accent: 214 80% 60%; /* Accent blue */
+    --dogwalking-red: 0 84% 60%; /* Error/destructive */
 
     --card: 0 0% 100%;
-    --card-foreground: var(--rover-gray-dark);
+    --card-foreground: var(--dogwalking-gray-dark);
 
     --popover: 0 0% 100%;
-    --popover-foreground: var(--rover-gray-dark);
+    --popover-foreground: var(--dogwalking-gray-dark);
 
-    --primary: var(--rover-green);
+    --primary: var(--dogwalking-blue);
     --primary-foreground: 0 0% 100%;
 
-    --secondary: var(--rover-gray-light);
-    --secondary-foreground: var(--rover-gray-dark);
+    --secondary: var(--dogwalking-blue-light);
+    --secondary-foreground: var(--dogwalking-gray-dark);
 
-    /* Rover specific semantic colors */
-    --rover-search-bg: 0 0% 100%;
-    --rover-search-border: 214 20% 85%;
-    --rover-hero-overlay: 0 0% 0% / 0.3;
+    /* DogWalking specific semantic colors */
+    --dogwalking-search-bg: 0 0% 100%;
+    --dogwalking-search-border: 214 20% 85%;
+    --dogwalking-hero-overlay: 214 100% 50% / 0.1;
 
-    --muted: var(--rover-gray-light);
-    --muted-foreground: var(--rover-gray);
+    --muted: var(--dogwalking-gray-light);
+    --muted-foreground: var(--dogwalking-gray);
 
-    --accent: var(--rover-blue);
+    --accent: var(--dogwalking-blue);
     --accent-foreground: 0 0% 100%;
 
-    --destructive: var(--rover-red);
+    --destructive: var(--dogwalking-red);
     --destructive-foreground: 0 0% 100%;
 
-    --border: var(--rover-search-border);
-    --input: var(--rover-search-border);
-    --ring: var(--rover-green);
+    --border: var(--dogwalking-search-border);
+    --input: var(--dogwalking-search-border);
+    --ring: var(--dogwalking-blue);
 
-    --radius: 0.75rem; /* Rover uses more rounded corners */
+    --radius: 0.75rem; /* DogWalking uses rounded corners */
 
-    /* Rover gradients and animations */
-    --rover-gradient-hero: linear-gradient(135deg, hsl(var(--rover-green)) 0%, hsl(var(--rover-blue)) 100%);
-    --rover-gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--rover-gray-light)) 100%);
-    --rover-shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
-    --rover-shadow-elevated: 0 8px 30px hsl(0 0% 0% / 0.12);
-    --rover-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* DogWalking gradients and animations */
+    --dogwalking-gradient-hero: linear-gradient(135deg, hsl(var(--dogwalking-blue)) 0%, hsl(var(--dogwalking-blue-medium)) 100%);
+    --dogwalking-gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--dogwalking-blue-light)) 100%);
+    --dogwalking-shadow-card: 0 4px 20px hsl(214 100% 50% / 0.08);
+    --dogwalking-shadow-elevated: 0 8px 30px hsl(214 100% 50% / 0.12);
+    --dogwalking-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 0 0% 98%;
-
+    --sidebar-background: 214 100% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: var(--dogwalking-blue);
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: var(--dogwalking-blue-light);
+    --sidebar-accent-foreground: var(--dogwalking-blue);
+    --sidebar-border: 214 30% 91%;
+    --sidebar-ring: var(--dogwalking-blue);
   }
 
   .dark {
-    --background: var(--rover-gray-dark);
+    --background: var(--dogwalking-gray-dark);
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -107,12 +101,12 @@ All colors MUST be HSL format to match Rover.com design.
     --ring: 212.7 26.8% 83.9%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary: var(--dogwalking-blue);
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: var(--dogwalking-blue);
   }
 }
 
@@ -125,44 +119,58 @@ All colors MUST be HSL format to match Rover.com design.
     @apply bg-background text-foreground font-sans;
   }
 
-  /* Rover-specific utility classes */
-  .rover-hero-bg {
-    background: linear-gradient(135deg, hsl(var(--rover-green) / 0.9) 0%, hsl(var(--rover-blue) / 0.9) 100%);
+  /* DogWalking-specific utility classes */
+  .dogwalking-hero-bg {
+    background: linear-gradient(135deg, hsl(var(--dogwalking-blue) / 0.9) 0%, hsl(var(--dogwalking-blue-medium) / 0.9) 100%);
   }
 
-  .rover-card {
-    @apply bg-white rounded-xl shadow-[0_4px_20px_hsl(0_0%_0%_/_0.08)] border border-gray-100/50;
-    transition: var(--rover-transition);
+  .dogwalking-card {
+    @apply bg-white rounded-xl border border-blue-200;
+    box-shadow: var(--dogwalking-shadow-card);
+    transition: var(--dogwalking-transition);
   }
 
-  .rover-card:hover {
-    @apply shadow-[0_8px_30px_hsl(0_0%_0%_/_0.12)] -translate-y-1;
+  .dogwalking-card:hover {
+    box-shadow: var(--dogwalking-shadow-elevated);
+    @apply -translate-y-1;
   }
 
-  .rover-button-primary {
-    @apply bg-[hsl(var(--rover-green))] hover:bg-[hsl(var(--rover-green-dark))] text-white font-semibold rounded-xl px-6 py-3;
-    transition: var(--rover-transition);
+  .dogwalking-button-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl px-6 py-3;
+    transition: var(--dogwalking-transition);
   }
 
-  .rover-button-secondary {
-    @apply bg-[hsl(var(--rover-blue))] hover:bg-[hsl(var(--rover-blue-dark))] text-white font-semibold rounded-xl px-6 py-3;
-    transition: var(--rover-transition);
+  .dogwalking-button-secondary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-xl px-6 py-3;
+    transition: var(--dogwalking-transition);
   }
 
-  .rover-input {
-    @apply border-[hsl(var(--rover-search-border))] rounded-xl px-4 py-3 focus:border-[hsl(var(--rover-green))] focus:ring-2 focus:ring-[hsl(var(--rover-green)_/_0.2)];
-    transition: var(--rover-transition);
+  .dogwalking-input {
+    @apply border-blue-200 rounded-xl px-4 py-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20;
+    transition: var(--dogwalking-transition);
   }
 
-  .rover-text-green {
-    color: hsl(var(--rover-green));
+  .dogwalking-text-blue {
+    @apply text-blue-600;
   }
 
-  .rover-text-gray {
-    color: hsl(var(--rover-gray));
+  .dogwalking-text-gray {
+    color: hsl(var(--dogwalking-gray));
   }
 
-  .rover-bg-gradient {
-    background: var(--rover-gradient-hero);
+  .dogwalking-bg-gradient {
+    background: var(--dogwalking-gradient-hero);
+  }
+
+  .dogwalking-bg-light {
+    @apply bg-blue-50;
+  }
+
+  .dogwalking-border {
+    @apply border-blue-200;
+  }
+
+  .dogwalking-hover {
+    @apply hover:bg-blue-50 hover:border-blue-300;
   }
 }

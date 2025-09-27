@@ -9,10 +9,10 @@ const Terms = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="w-20 h-20 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-              <Scale className="w-10 h-10 text-rover-green" />
+            <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+              <Scale className="w-10 h-10 text-dogwalking-green" />
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -29,13 +29,13 @@ const Terms = () => {
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Notice */}
-            <div className="rover-card p-6 mb-8 bg-blue-50 border-l-4 border-rover-blue">
+            <div className="dogwalking-card p-6 mb-8 bg-blue-50 border-l-4 border-dogwalking-blue">
               <div className="flex items-start space-x-3">
-                <AlertTriangle className="w-6 h-6 text-rover-blue flex-shrink-0 mt-1" />
+                <AlertTriangle className="w-6 h-6 text-dogwalking-blue flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Important</h3>
                   <p className="text-gray-700">
-                    En utilisant les services Rover, vous acceptez ces conditions d'utilisation. 
+                    En utilisant les services DogWalking, vous acceptez ces conditions d'utilisation. 
                     Veuillez les lire attentivement avant d'utiliser notre plateforme.
                   </p>
                 </div>
@@ -46,14 +46,14 @@ const Terms = () => {
             <div className="prose max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptation des conditions</h2>
               <p className="text-gray-600 mb-6">
-                En accédant et en utilisant le site web et l'application mobile de Rover ("Services"), 
+                En accédant et en utilisant le site web et l'application mobile de DogWalking ("Services"), 
                 vous acceptez d'être lié par ces Conditions d'utilisation ("Conditions"). Si vous n'acceptez 
                 pas ces conditions, veuillez ne pas utiliser nos Services.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description des services</h2>
               <p className="text-gray-600 mb-4">
-                Rover est une plateforme qui met en relation les propriétaires d'animaux de compagnie 
+                DogWalking est une plateforme qui met en relation les propriétaires d'animaux de compagnie 
                 ("Propriétaires") avec des prestataires de services de garde d'animaux ("Pet Sitters"). 
                 Nos services incluent :
               </p>
@@ -98,7 +98,7 @@ const Terms = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Paiements et frais</h2>
               <p className="text-gray-600 mb-4">
                 Les paiements sont traités de manière sécurisée via notre plateforme. 
-                Rover perçoit une commission sur chaque réservation complétée.
+                DogWalking perçoit une commission sur chaque réservation complétée.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
                 <li>Les prix sont fixés par les Pet Sitters</li>
@@ -106,23 +106,23 @@ const Terms = () => {
                 <li>Les remboursements sont soumis à notre politique d'annulation</li>
               </ul>
 
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. La Rover Guarantee</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. La DogWalking Guarantee</h2>
               <p className="text-gray-600 mb-6">
-                Rover offre certaines protections pour les réservations éligibles, incluant une couverture 
+                DogWalking offre certaines protections pour les réservations éligibles, incluant une couverture 
                 pour les soins vétérinaires d'urgence jusqu'à 25 000€. Les détails complets sont disponibles 
-                dans notre Police de la Rover Guarantee.
+                dans notre Police de la DogWalking Guarantee.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Limitation de responsabilité</h2>
               <p className="text-gray-600 mb-6">
-                Rover agit comme un intermédiaire entre les Propriétaires et les Pet Sitters. 
+                DogWalking agit comme un intermédiaire entre les Propriétaires et les Pet Sitters. 
                 Nous ne sommes pas responsables des actions ou omissions des utilisateurs de notre plateforme. 
                 Vous utilisez nos Services à vos propres risques.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Propriété intellectuelle</h2>
               <p className="text-gray-600 mb-6">
-                Tous les droits de propriété intellectuelle sur nos Services appartiennent à Rover ou 
+                Tous les droits de propriété intellectuelle sur nos Services appartiennent à DogWalking ou 
                 à nos concédants de licence. Vous ne pouvez pas reproduire, distribuer ou créer des 
                 œuvres dérivées sans notre autorisation écrite préalable.
               </p>
@@ -151,9 +151,9 @@ const Terms = () => {
               <p className="text-gray-600 mb-6">
                 Pour toute question concernant ces Conditions d'utilisation, contactez-nous à :
               </p>
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email :</strong> legal@rover.fr</p>
+                  <p><strong>Email :</strong> legal@dogwalking.fr</p>
                   <p><strong>Adresse :</strong> 123 Avenue des Champs-Élysées, 75008 Paris, France</p>
                   <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
                 </div>
@@ -163,12 +163,12 @@ const Terms = () => {
         </section>
 
         {/* Additional Info */}
-        <section className="py-16 bg-rover-gray-light">
+        <section className="py-16 bg-dogwalking-gray-light">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <FileText className="w-6 h-6 text-rover-green" />
+                  <FileText className="w-6 h-6 text-dogwalking-green" />
                   <h3 className="text-lg font-semibold text-gray-900">
                     Politique de confidentialité
                   </h3>
@@ -176,22 +176,22 @@ const Terms = () => {
                 <p className="text-gray-600 mb-4">
                   Découvrez comment nous collectons, utilisons et protégeons vos données personnelles.
                 </p>
-                <a href="/privacy" className="text-rover-green hover:underline">
+                <a href="/privacy" className="text-dogwalking-green hover:underline">
                   Lire la politique de confidentialité →
                 </a>
               </div>
 
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Scale className="w-6 h-6 text-rover-green" />
+                  <Scale className="w-6 h-6 text-dogwalking-green" />
                   <h3 className="text-lg font-semibold text-gray-900">
-                    Rover Guarantee
+                    DogWalking Guarantee
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-4">
                   Apprenez-en plus sur notre programme de protection et les couvertures disponibles.
                 </p>
-                <a href="/rover-guarantee" className="text-rover-green hover:underline">
+                <a href="/dogwalking-guarantee" className="text-dogwalking-green hover:underline">
                   Voir les détails de la garantie →
                 </a>
               </div>

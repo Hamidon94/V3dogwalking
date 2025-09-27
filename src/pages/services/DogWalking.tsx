@@ -11,12 +11,12 @@ const DogWalking = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Des promeneurs de confiance pour votre chien",
-      description: "Les profils des promeneurs de chien ont été examinés et approuvés individuellement par Rover et 97 % des réservations ont reçu une évaluation 5 étoiles."
+      description: "Les profils des promeneurs de chien ont été examinés et approuvés individuellement par DogWalking et 97 % des réservations ont reçu une évaluation 5 étoiles."
     },
     {
       icon: <Heart className="w-6 h-6" />,
       title: "Une première rencontre en toute simplicité",
-      description: "Rencontrez le dog sitter idéal pour votre chien avant de réserver. Programmez gratuitement une première rencontre en personne, directement à partir de votre boîte de réception Rover."
+      description: "Rencontrez le dog sitter idéal pour votre chien avant de réserver. Programmez gratuitement une première rencontre en personne, directement à partir de votre boîte de réception DogWalking."
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -49,7 +49,7 @@ const DogWalking = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="relative py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
             style={{ backgroundImage: `url(${dogWalkingImage})` }}
@@ -85,7 +85,7 @@ const DogWalking = () => {
                     <Link to="/services/doggy-daycare" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Garderie pour chien • chez le pet sitter
                     </Link>
-                    <span className="px-4 py-2 bg-rover-green text-white rounded-full text-sm">
+                    <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
                       Promenade de chien • dans votre quartier
                     </span>
                   </div>
@@ -138,8 +138,8 @@ const DogWalking = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {benefit.icon}
                     </div>
                   </div>
@@ -158,7 +158,7 @@ const DogWalking = () => {
         </section>
 
         {/* How It Works Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -172,7 +172,7 @@ const DogWalking = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {howItWorks.map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-blue rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-blue rounded-full flex items-center justify-center">
                     <span className="text-2xl font-bold text-white">
                       {step.step}
                     </span>
@@ -191,7 +191,7 @@ const DogWalking = () => {
 
             <div className="text-center mt-12">
               <Link to="/search?serviceType=dog-walking">
-                <Button className="rover-button-secondary px-8 py-4 text-lg">
+                <Button className="dogwalking-button-secondary px-8 py-4 text-lg">
                   Trouver un promeneur maintenant
                 </Button>
               </Link>
@@ -209,7 +209,7 @@ const DogWalking = () => {
             </div>
 
             <div className="space-y-8">
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Combien coûte une promenade de chien ?
                 </h3>
@@ -218,7 +218,7 @@ const DogWalking = () => {
                 </p>
               </div>
 
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Puis-je rencontrer le promeneur avant la première promenade ?
                 </h3>
@@ -227,7 +227,7 @@ const DogWalking = () => {
                 </p>
               </div>
 
-              <div className="rover-card p-6">
+              <div className="dogwalking-card p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Que se passe-t-il si mon chien a des besoins spéciaux ?
                 </h3>
@@ -240,7 +240,7 @@ const DogWalking = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Prêt à offrir à votre chien sa prochaine aventure ?
@@ -251,12 +251,12 @@ const DogWalking = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/search?serviceType=dog-walking">
-                <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+                <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
                   Commencer la recherche
                 </Button>
               </Link>
               <Link to="/become-sitter">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rover-green px-8 py-4 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
                   Devenir promeneur
                 </Button>
               </Link>

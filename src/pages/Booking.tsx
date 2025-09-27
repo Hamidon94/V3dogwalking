@@ -288,7 +288,7 @@ const Booking = () => {
                           <div className="flex-1">
                             <span className="font-medium">{service.name}</span>
                           </div>
-                          <span className="text-rover-green font-medium">+{service.price}€</span>
+                          <span className="text-dogwalking-green font-medium">+{service.price}€</span>
                         </label>
                       ))}
                     </div>
@@ -396,14 +396,14 @@ const Booking = () => {
                 <div className="border-t pt-4">
                   <div className="flex justify-between font-medium text-lg">
                     <span>Total</span>
-                    <span className="text-rover-green">{calculateTotal()}€</span>
+                    <span className="text-dogwalking-green">{calculateTotal()}€</span>
                   </div>
                 </div>
 
                 <div className="space-y-3 pt-4">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Shield className="w-4 h-4 text-rover-green" />
-                    <span>Protection Rover incluse</span>
+                    <Shield className="w-4 h-4 text-dogwalking-green" />
+                    <span>Protection DogWalking incluse</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <CreditCard className="w-4 h-4" />

@@ -36,7 +36,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
 
   if (compact) {
     return (
-      <form onSubmit={handleSubmit} className={`rover-card p-6 ${className}`}>
+      <form onSubmit={handleSubmit} className={`dogwalking-card p-6 ${className}`}>
         <div className="space-y-4">
           {/* Pet Selection */}
           <div>
@@ -73,7 +73,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
             <select
               value={formData.serviceType}
               onChange={(e) => setFormData(prev => ({ ...prev, serviceType: e.target.value }))}
-              className="rover-input w-full"
+              className="dogwalking-input w-full"
             >
               <option value="boarding">Hébergement • chez le pet sitter</option>
               <option value="house-sitting">Garde à domicile • chez vous</option>
@@ -94,12 +94,12 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                 placeholder="Entrez votre adresse"
                 value={formData.address}
                 onChange={(e) => setFormData(prev => ({ ...prev, address: e.target.value }))}
-                className="rover-input pl-10"
+                className="dogwalking-input pl-10"
               />
             </div>
           </div>
 
-          <Button type="submit" className="rover-button-secondary w-full">
+          <Button type="submit" className="dogwalking-button-secondary w-full">
             Rechercher
           </Button>
         </div>
@@ -108,7 +108,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={`rover-card p-8 ${className}`}>
+    <form onSubmit={handleSubmit} className={`dogwalking-card p-8 ${className}`}>
       <div className="space-y-6">
         {/* Pet Type Selection */}
         <div>
@@ -156,7 +156,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                   className="w-4 h-4"
                 />
                 <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-rover-green" />
+                  <Heart className="w-5 h-5 text-dogwalking-green" />
                   <span>Hébergement</span>
                 </div>
               </label>
@@ -170,7 +170,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                   className="w-4 h-4"
                 />
                 <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-rover-green" />
+                  <Heart className="w-5 h-5 text-dogwalking-green" />
                   <span>Garde à domicile</span>
                 </div>
               </label>
@@ -192,7 +192,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                   className="w-4 h-4"
                 />
                 <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-rover-green" />
+                  <Heart className="w-5 h-5 text-dogwalking-green" />
                   <span>Visites à domicile</span>
                 </div>
               </label>
@@ -206,7 +206,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                   className="w-4 h-4"
                 />
                 <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-rover-green" />
+                  <Heart className="w-5 h-5 text-dogwalking-green" />
                   <span>Garderie pour chien</span>
                 </div>
               </label>
@@ -220,7 +220,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                   className="w-4 h-4"
                 />
                 <div className="flex items-center space-x-3">
-                  <Heart className="w-5 h-5 text-rover-green" />
+                  <Heart className="w-5 h-5 text-dogwalking-green" />
                   <span>Promenade de chien</span>
                 </div>
               </label>
@@ -238,7 +238,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                 placeholder="Ajoutez votre adresse"
                 value={formData.address}
                 onChange={(e) => setFormData(prev => ({ ...prev, address: e.target.value }))}
-                className="rover-input pl-10"
+                className="dogwalking-input pl-10"
               />
             </div>
           </div>
@@ -251,7 +251,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                 type="date"
                 value={formData.startDate}
                 onChange={(e) => setFormData(prev => ({ ...prev, startDate: e.target.value }))}
-                className="rover-input pl-10"
+                className="dogwalking-input pl-10"
               />
             </div>
           </div>
@@ -264,7 +264,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
                 type="date"
                 value={formData.endDate}
                 onChange={(e) => setFormData(prev => ({ ...prev, endDate: e.target.value }))}
-                className="rover-input pl-10"
+                className="dogwalking-input pl-10"
               />
             </div>
           </div>
@@ -302,7 +302,7 @@ const SearchForm = ({ className = "", compact = false }: SearchFormProps) => {
         )}
 
         {/* Submit Button */}
-        <Button type="submit" className="rover-button-secondary w-full md:w-auto px-12 py-4 text-lg">
+        <Button type="submit" className="dogwalking-button-secondary w-full md:w-auto px-12 py-4 text-lg">
           Rechercher
         </Button>
 

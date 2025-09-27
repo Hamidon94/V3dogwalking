@@ -64,7 +64,7 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Link key={service.id} to={service.link} className="group">
-              <div className="rover-card p-0 overflow-hidden">
+              <div className="dogwalking-card p-0 overflow-hidden">
                 {/* Image */}
                 <div className="aspect-video overflow-hidden">
                   <img 
@@ -77,7 +77,7 @@ const ServicesSection = () => {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="text-rover-green">
+                    <div className="text-dogwalking-green">
                       {service.icon}
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">
@@ -89,7 +89,7 @@ const ServicesSection = () => {
                     {service.description}
                   </p>
 
-                  <div className="mt-4 text-rover-green font-semibold group-hover:text-rover-green-dark transition-colors">
+                  <div className="mt-4 text-dogwalking-green font-semibold group-hover:text-dogwalking-green-dark transition-colors">
                     En savoir plus →
                   </div>
                 </div>
@@ -101,7 +101,7 @@ const ServicesSection = () => {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <Link to="/services">
-            <button className="rover-button-primary px-8 py-4 text-lg">
+            <button className="dogwalking-button-primary px-8 py-4 text-lg">
               Voir tous les services
             </button>
           </Link>

@@ -152,7 +152,7 @@ const Admin = () => {
 
   const getTypeBadge = (type: string) => {
     return type === "sitter" ? (
-      <Badge className="bg-rover-green/10 text-rover-green">Pet Sitter</Badge>
+      <Badge className="bg-dogwalking-green/10 text-dogwalking-green">Pet Sitter</Badge>
     ) : (
       <Badge variant="outline">Propriétaire</Badge>
     );
@@ -167,7 +167,7 @@ const Admin = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Administration</h1>
-            <p className="text-muted-foreground">Gérez votre plateforme Rover</p>
+            <p className="text-muted-foreground">Gérez votre plateforme DogWalking</p>
           </div>
           <div className="flex gap-3 mt-4 md:mt-0">
             <Button variant="outline" size="sm">
@@ -304,7 +304,7 @@ const Admin = () => {
                           <Button size="sm" variant="outline">
                             <Eye className="w-4 h-4" />
                           </Button>
-                          <Button size="sm" className="bg-rover-green">
+                          <Button size="sm" className="bg-dogwalking-green">
                             <CheckCircle className="w-4 h-4" />
                           </Button>
                         </div>

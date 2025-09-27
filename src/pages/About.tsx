@@ -34,7 +34,7 @@ const About = () => {
       name: "Sarah Martin",
       role: "CEO & Fondatrice",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b977?w=300&h=300&fit=crop&crop=face",
-      description: "Passionnée d'animaux depuis l'enfance, Sarah a créé Rover pour révolutionner la garde d'animaux."
+      description: "Passionnée d'animaux depuis l'enfance, Sarah a créé DogWalking pour révolutionner la garde d'animaux."
     },
     {
       name: "Marc Dubois", 
@@ -56,18 +56,18 @@ const About = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              À propos de Rover
+              À propos de DogWalking
             </h1>
             
             <p className="text-xl text-gray-600 mb-8">
               Nous croyons que tout le monde mérite l'amour inconditionnel d'un animal de compagnie—
-              et chez Rover, notre mission est de faciliter cette expérience.
+              et chez DogWalking, notre mission est de faciliter cette expérience.
             </p>
 
-            <Button className="rover-button-secondary px-8 py-4 text-lg">
+            <Button className="dogwalking-button-secondary px-8 py-4 text-lg">
               Rejoindre notre mission
             </Button>
           </div>
@@ -79,7 +79,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
               {stats.map((stat, index) => (
                 <div key={index}>
-                  <div className="text-4xl font-bold text-rover-green mb-2">
+                  <div className="text-4xl font-bold text-dogwalking-green mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-600">
@@ -92,7 +92,7 @@ const About = () => {
         </section>
 
         {/* Story Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -102,7 +102,7 @@ const About = () => {
                 
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p>
-                    Fondé en 2011, Rover est né d'une idée simple : connecter les propriétaires d'animaux 
+                    Fondé en 2011, DogWalking est né d'une idée simple : connecter les propriétaires d'animaux 
                     avec des personnes de confiance qui partagent leur amour des animaux.
                   </p>
                   
@@ -120,10 +120,10 @@ const About = () => {
                 </div>
               </div>
               
-              <div className="rover-card p-8">
+              <div className="dogwalking-card p-8">
                 <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <Heart className="w-16 h-16 text-rover-green" />
+                  <div className="w-32 h-32 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <Heart className="w-16 h-16 text-dogwalking-green" />
                   </div>
                   
                   <blockquote className="text-xl text-gray-700 italic mb-4">
@@ -131,8 +131,8 @@ const About = () => {
                     même quand ses propriétaires ne peuvent pas être là."
                   </blockquote>
                   
-                  <cite className="text-rover-green font-semibold">
-                    — Équipe Rover
+                  <cite className="text-dogwalking-green font-semibold">
+                    — Équipe DogWalking
                   </cite>
                 </div>
               </div>
@@ -155,8 +155,8 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {values.map((value, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-16 h-16 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                  <div className="w-16 h-16 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {value.icon}
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const About = () => {
         </section>
 
         {/* Team Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -188,7 +188,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {team.map((member, index) => (
-                <div key={index} className="rover-card p-8 text-center">
+                <div key={index} className="dogwalking-card p-8 text-center">
                   <img 
                     src={member.image} 
                     alt={member.name}
@@ -199,7 +199,7 @@ const About = () => {
                     {member.name}
                   </h3>
                   
-                  <p className="text-rover-green font-medium mb-4">
+                  <p className="text-dogwalking-green font-medium mb-4">
                     {member.role}
                   </p>
                   
@@ -215,10 +215,10 @@ const About = () => {
         {/* Mission Section */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rover-card p-12">
+            <div className="dogwalking-card p-12">
               <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-8 bg-rover-green/10 rounded-full flex items-center justify-center">
-                  <Target className="w-10 h-10 text-rover-green" />
+                <div className="w-20 h-20 mx-auto mb-8 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                  <Target className="w-10 h-10 text-dogwalking-green" />
                 </div>
                 
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -233,7 +233,7 @@ const About = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                   <div className="flex items-start space-x-3">
-                    <Award className="w-6 h-6 text-rover-green mt-1 flex-shrink-0" />
+                    <Award className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Excellence du service</h4>
                       <p className="text-gray-600">Nous nous engageons à fournir le meilleur service possible pour chaque animal.</p>
@@ -241,7 +241,7 @@ const About = () => {
                   </div>
                   
                   <div className="flex items-start space-x-3">
-                    <Globe className="w-6 h-6 text-rover-green mt-1 flex-shrink-0" />
+                    <Globe className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Impact global</h4>
                       <p className="text-gray-600">Nous œuvrons pour améliorer la vie des animaux partout dans le monde.</p>
@@ -254,7 +254,7 @@ const About = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Rejoignez notre communauté
@@ -264,10 +264,10 @@ const About = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+              <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
                 Trouver un pet sitter
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rover-green px-8 py-4 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
                 Devenir pet sitter
               </Button>
             </div>

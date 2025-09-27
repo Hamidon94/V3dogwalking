@@ -43,7 +43,7 @@ const Help = () => {
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Sécurité",
-      description: "Rover Guarantee et sécurité",
+      description: "DogWalking Guarantee et sécurité",
       articles: 15
     }
   ];
@@ -54,8 +54,8 @@ const Help = () => {
       answer: "Consultez les profils détaillés, lisez les avis d'autres propriétaires, vérifiez les certifications et organisez une rencontre gratuite avant de réserver."
     },
     {
-      question: "Que couvre la Rover Guarantee ?",
-      answer: "La Rover Guarantee inclut jusqu'à 25 000€ de couverture pour les soins vétérinaires d'urgence, une assurance responsabilité et un support 24h/24."
+      question: "Que couvre la DogWalking Guarantee ?",
+      answer: "La DogWalking Guarantee inclut jusqu'à 25 000€ de couverture pour les soins vétérinaires d'urgence, une assurance responsabilité et un support 24h/24."
     },
     {
       question: "Comment annuler une réservation ?",
@@ -94,7 +94,7 @@ const Help = () => {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       description: "Réponse sous 24h",
-      action: "support@rover.fr",
+      action: "support@dogwalking.fr",
       available: true
     }
   ];
@@ -105,14 +105,14 @@ const Help = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="w-20 h-20 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-              <HelpCircle className="w-10 h-10 text-rover-green" />
+            <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+              <HelpCircle className="w-10 h-10 text-dogwalking-green" />
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Centre d'aide Rover
+              Centre d'aide DogWalking
             </h1>
             
             <p className="text-xl text-gray-600 mb-8">
@@ -126,7 +126,7 @@ const Help = () => {
                 placeholder="Rechercher dans l'aide..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="rover-input pl-12 py-4 text-lg"
+                className="dogwalking-input pl-12 py-4 text-lg"
               />
             </div>
           </div>
@@ -146,9 +146,9 @@ const Help = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {categories.map((category, index) => (
-                <div key={index} className="rover-card p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
-                  <div className="w-12 h-12 mx-auto mb-4 bg-rover-green/10 rounded-full flex items-center justify-center">
-                    <div className="text-rover-green">
+                <div key={index} className="dogwalking-card p-6 text-center hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="w-12 h-12 mx-auto mb-4 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                    <div className="text-dogwalking-green">
                       {category.icon}
                     </div>
                   </div>
@@ -161,7 +161,7 @@ const Help = () => {
                     {category.description}
                   </p>
 
-                  <span className="text-rover-green text-sm font-medium">
+                  <span className="text-dogwalking-green text-sm font-medium">
                     {category.articles} articles
                   </span>
                 </div>
@@ -171,7 +171,7 @@ const Help = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -184,7 +184,7 @@ const Help = () => {
 
             <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="rover-card">
+                <div key={index} className="dogwalking-card">
                   <button
                     onClick={() => setExpandedFAQ(expandedFAQ === index ? null : index)}
                     className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
@@ -226,11 +226,11 @@ const Help = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {contactOptions.map((option, index) => (
-                <div key={index} className="rover-card p-8 text-center">
+                <div key={index} className="dogwalking-card p-8 text-center">
                   <div className={`w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center ${
-                    option.available ? 'bg-rover-green/10' : 'bg-gray-100'
+                    option.available ? 'bg-dogwalking-green/10' : 'bg-gray-100'
                   }`}>
-                    <div className={option.available ? 'text-rover-green' : 'text-gray-400'}>
+                    <div className={option.available ? 'text-dogwalking-green' : 'text-gray-400'}>
                       {option.icon}
                     </div>
                   </div>
@@ -246,7 +246,7 @@ const Help = () => {
                   <Button 
                     className={`w-full ${
                       option.available 
-                        ? 'rover-button-secondary' 
+                        ? 'dogwalking-button-secondary' 
                         : 'bg-gray-200 text-gray-500 cursor-not-allowed'
                     }`}
                     disabled={!option.available}
@@ -260,7 +260,7 @@ const Help = () => {
         </section>
 
         {/* Popular Articles */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -272,12 +272,12 @@ const Help = () => {
               {[
                 "Comment préparer la première garde de mon animal ?",
                 "Que faire en cas d'urgence vétérinaire ?",
-                "Comment devenir un pet sitter sur Rover ?",
+                "Comment devenir un pet sitter sur DogWalking ?",
                 "Comprendre les tarifs et les paiements",
                 "Conseils pour une rencontre réussie",
                 "Gérer les communications avec votre pet sitter"
               ].map((title, index) => (
-                <div key={index} className="rover-card p-6 hover:shadow-lg transition-shadow cursor-pointer">
+                <div key={index} className="dogwalking-card p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <h3 className="font-medium text-gray-900 mb-2">{title}</h3>
                   <p className="text-sm text-gray-500">Article d'aide</p>
                 </div>

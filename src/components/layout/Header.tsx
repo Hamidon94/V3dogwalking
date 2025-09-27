@@ -12,8 +12,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold rover-text-green">
-              🐾 Rover
+            <img src="/dogwalking-logo.png" alt="DogWalking" className="w-10 h-10" />
+            <div className="text-2xl font-bold text-blue-600">
+              DogWalking
             </div>
           </Link>
 
@@ -21,7 +22,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               to="/search"
-              className="flex items-center space-x-1 text-gray-700 hover:text-rover-green transition-colors"
+              className="flex items-center space-x-1 text-gray-700 hover:text-dogwalking-green transition-colors"
             >
               <Search className="w-4 h-4" />
               <span>Rechercher des pet sitters</span>
@@ -29,7 +30,7 @@ const Header = () => {
             
             <Link
               to="/become-sitter"
-              className="flex items-center space-x-1 text-gray-700 hover:text-rover-green transition-colors"
+              className="flex items-center space-x-1 text-gray-700 hover:text-dogwalking-green transition-colors"
             >
               <Heart className="w-4 h-4" />
               <span>Devenir pet sitter</span>
@@ -37,7 +38,7 @@ const Header = () => {
             
             <Link
               to="/services"
-              className="text-gray-700 hover:text-rover-green transition-colors"
+              className="text-gray-700 hover:text-dogwalking-green transition-colors"
             >
               Nos services
             </Link>
@@ -64,7 +65,7 @@ const Header = () => {
             </Link>
 
             <Link to="/signup">
-              <Button className="rover-button-primary">
+              <Button className="dogwalking-button-primary">
                 S'inscrire
               </Button>
             </Link>
@@ -121,7 +122,7 @@ const Header = () => {
                 </Link>
                 
                 <Link to="/signup" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button className="rover-button-primary w-full">
+                  <Button className="dogwalking-button-primary w-full">
                     S'inscrire
                   </Button>
                 </Link>

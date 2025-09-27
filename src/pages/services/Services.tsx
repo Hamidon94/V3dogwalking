@@ -66,7 +66,7 @@ const Services = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -77,7 +77,7 @@ const Services = () => {
               </p>
               
               <Link to="/search">
-                <Button className="rover-button-secondary px-8 py-4 text-lg">
+                <Button className="dogwalking-button-secondary px-8 py-4 text-lg">
                   Commencer votre recherche
                 </Button>
               </Link>
@@ -103,14 +103,14 @@ const Services = () => {
                   {/* Content */}
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="text-rover-green">
+                      <div className="text-dogwalking-green">
                         {service.icon}
                       </div>
                       <div>
                         <h2 className="text-3xl font-bold text-gray-900">
                           {service.title}
                         </h2>
-                        <p className="text-rover-green font-medium">
+                        <p className="text-dogwalking-green font-medium">
                           {service.subtitle}
                         </p>
                       </div>
@@ -124,14 +124,14 @@ const Services = () => {
                     <div className="grid grid-cols-2 gap-3 mb-8">
                       {service.features.map((feature, featureIndex) => (
                         <div key={featureIndex} className="flex items-center space-x-2">
-                          <div className="w-2 h-2 bg-rover-green rounded-full flex-shrink-0"></div>
+                          <div className="w-2 h-2 bg-dogwalking-green rounded-full flex-shrink-0"></div>
                           <span className="text-gray-700 text-sm">{feature}</span>
                         </div>
                       ))}
                     </div>
 
                     <Link to={service.link}>
-                      <Button className="rover-button-primary">
+                      <Button className="dogwalking-button-primary">
                         En savoir plus sur {service.title.toLowerCase()}
                       </Button>
                     </Link>
@@ -143,7 +143,7 @@ const Services = () => {
         </section>
 
         {/* Comparison Section */}
-        <section className="py-20 bg-rover-gray-light">
+        <section className="py-20 bg-dogwalking-gray-light">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -154,7 +154,7 @@ const Services = () => {
               </p>
             </div>
 
-            <div className="rover-card p-8">
+            <div className="dogwalking-card p-8">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
@@ -174,7 +174,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">1+ nuits</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
-                      <td className="py-4 px-4 text-center font-semibold text-rover-green">25-40€/nuit</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">25-40€/nuit</td>
                       <td className="py-4 px-4 text-center text-gray-700">Vacances, voyages</td>
                     </tr>
                     <tr>
@@ -184,7 +184,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">1+ nuits</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-rover-green">40-60€/nuit</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">40-60€/nuit</td>
                       <td className="py-4 px-4 text-center text-gray-700">Animaux anxieux</td>
                     </tr>
                     <tr>
@@ -194,7 +194,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">30-60 min</td>
                       <td className="py-4 px-4 text-center text-gray-700">Extérieur</td>
-                      <td className="py-4 px-4 text-center font-semibold text-rover-green">15-25€/promenade</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">15-25€/promenade</td>
                       <td className="py-4 px-4 text-center text-gray-700">Journées chargées</td>
                     </tr>
                     <tr>
@@ -204,7 +204,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">Journée</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
-                      <td className="py-4 px-4 text-center font-semibold text-rover-green">20-35€/jour</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">20-35€/jour</td>
                       <td className="py-4 px-4 text-center text-gray-700">Socialisation</td>
                     </tr>
                     <tr>
@@ -214,7 +214,7 @@ const Services = () => {
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">30-60 min</td>
                       <td className="py-4 px-4 text-center text-gray-700">Votre domicile</td>
-                      <td className="py-4 px-4 text-center font-semibold text-rover-green">15-20€/visite</td>
+                      <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">15-20€/visite</td>
                       <td className="py-4 px-4 text-center text-gray-700">Chats, courtes absences</td>
                     </tr>
                   </tbody>
@@ -225,7 +225,7 @@ const Services = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 rover-bg-gradient">
+        <section className="py-20 dogwalking-bg-gradient">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
               Prêt à trouver le service parfait ?
@@ -236,12 +236,12 @@ const Services = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/search">
-                <Button className="rover-button-primary bg-white text-rover-green hover:bg-gray-100 px-8 py-4 text-lg">
+                <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
                   Trouver un pet sitter
                 </Button>
               </Link>
               <Link to="/become-sitter">
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-rover-green px-8 py-4 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
                   Devenir pet sitter
                 </Button>
               </Link>

@@ -52,12 +52,12 @@ const Login = () => {
               Connexion
             </h1>
             <p className="text-gray-600">
-              Accédez à votre compte Rover
+              Accédez à votre compte DogWalking
             </p>
           </div>
 
           {/* Form */}
-          <div className="rover-card p-8">
+          <div className="dogwalking-card p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {error && (
                 <Alert variant="destructive">
@@ -77,7 +77,7 @@ const Login = () => {
                     value={formData.email}
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="votre@email.com"
-                    className="rover-input pl-11"
+                    className="dogwalking-input pl-11"
                   />
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Login = () => {
                     value={formData.password}
                     onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
                     placeholder="Votre mot de passe"
-                    className="rover-input pl-11 pr-11"
+                    className="dogwalking-input pl-11 pr-11"
                   />
                   <button
                     type="button"
@@ -108,7 +108,7 @@ const Login = () => {
 
               {/* Forgot Password */}
               <div className="text-right">
-                <Link to="/forgot-password" className="text-rover-green hover:underline">
+                <Link to="/forgot-password" className="text-dogwalking-green hover:underline">
                   Mot de passe oublié ?
                 </Link>
               </div>
@@ -117,7 +117,7 @@ const Login = () => {
               <Button
                 type="submit"
                 disabled={loading}
-                className="rover-button-secondary w-full py-3"
+                className="dogwalking-button-secondary w-full py-3"
               >
                 {loading ? "Connexion..." : "Se connecter"}
               </Button>
@@ -152,7 +152,7 @@ const Login = () => {
             <div className="text-center mt-6 pt-6 border-t border-gray-200">
               <p className="text-gray-600">
                 Pas encore de compte ?{" "}
-                <Link to="/signup" className="font-medium text-rover-green hover:underline">
+                <Link to="/signup" className="font-medium text-dogwalking-green hover:underline">
                   Créer un compte
                 </Link>
               </p>
@@ -163,11 +163,11 @@ const Login = () => {
           <div className="text-center space-y-2">
             <p className="text-sm text-gray-500">
               En vous connectant, vous acceptez nos{" "}
-              <Link to="/terms" className="text-rover-green hover:underline">
+              <Link to="/terms" className="text-dogwalking-green hover:underline">
                 Conditions d'utilisation
               </Link>{" "}
               et notre{" "}
-              <Link to="/privacy" className="text-rover-green hover:underline">
+              <Link to="/privacy" className="text-dogwalking-green hover:underline">
                 Politique de confidentialité
               </Link>
             </p>

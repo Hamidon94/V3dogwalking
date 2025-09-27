@@ -20,23 +20,22 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         
-        /* Rover Brand Colors */
-        rover: {
-          green: {
-            DEFAULT: "hsl(var(--rover-green))",
-            dark: "hsl(var(--rover-green-dark))",
-          },
+        /* DogWalking Brand Colors */
+        dogwalking: {
           blue: {
-            DEFAULT: "hsl(var(--rover-blue))",
-            dark: "hsl(var(--rover-blue-dark))",
+            DEFAULT: "hsl(var(--dogwalking-blue))",
+            dark: "hsl(var(--dogwalking-blue-dark))",
+            light: "hsl(var(--dogwalking-blue-light))",
+            medium: "hsl(var(--dogwalking-blue-medium))",
           },
+          white: "hsl(var(--dogwalking-white))",
           gray: {
-            light: "hsl(var(--rover-gray-light))",
-            DEFAULT: "hsl(var(--rover-gray))",
-            dark: "hsl(var(--rover-gray-dark))",
+            light: "hsl(var(--dogwalking-gray-light))",
+            DEFAULT: "hsl(var(--dogwalking-gray))",
+            dark: "hsl(var(--dogwalking-gray-dark))",
           },
-          orange: "hsl(var(--rover-orange))",
-          red: "hsl(var(--rover-red))",
+          accent: "hsl(var(--dogwalking-accent))",
+          red: "hsl(var(--dogwalking-red))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

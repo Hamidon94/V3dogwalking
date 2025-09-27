@@ -355,7 +355,7 @@ const SitterOnboarding = () => {
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <Shield className="w-8 h-8 text-rover-green" />
+                      <Shield className="w-8 h-8 text-dogwalking-green" />
                       <div>
                         <h3 className="font-medium">Vérification des antécédents</h3>
                         <p className="text-sm text-muted-foreground">Vérification judiciaire complète</p>
@@ -372,7 +372,7 @@ const SitterOnboarding = () => {
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <User className="w-8 h-8 text-rover-green" />
+                      <User className="w-8 h-8 text-dogwalking-green" />
                       <div>
                         <h3 className="font-medium">Vérification d'identité</h3>
                         <p className="text-sm text-muted-foreground">Confirmation de votre identité</p>
@@ -389,7 +389,7 @@ const SitterOnboarding = () => {
                 <CardContent className="p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <Camera className="w-8 h-8 text-rover-green" />
+                      <Camera className="w-8 h-8 text-dogwalking-green" />
                       <div>
                         <h3 className="font-medium">Photo de profil</h3>
                         <p className="text-sm text-muted-foreground">Ajoutez une photo souriante</p>
@@ -403,11 +403,11 @@ const SitterOnboarding = () => {
               </Card>
             </div>
 
-            <div className="bg-rover-green/10 p-4 rounded-lg">
+            <div className="bg-dogwalking-green/10 p-4 rounded-lg">
               <div className="flex items-start space-x-3">
-                <CheckCircle className="w-6 h-6 text-rover-green mt-0.5" />
+                <CheckCircle className="w-6 h-6 text-dogwalking-green mt-0.5" />
                 <div>
-                  <h3 className="font-medium text-rover-green">Félicitations !</h3>
+                  <h3 className="font-medium text-dogwalking-green">Félicitations !</h3>
                   <p className="text-sm text-muted-foreground mt-1">
                     Votre profil est prêt ! Vous pouvez commencer à recevoir des demandes de garde.
                   </p>
@@ -450,9 +450,9 @@ const SitterOnboarding = () => {
                   <div key={stepNumber} className="flex flex-col items-center space-y-1">
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                       isCompleted 
-                        ? 'bg-rover-green text-white' 
+                        ? 'bg-dogwalking-green text-white' 
                         : isCurrent 
-                        ? 'bg-rover-green/20 text-rover-green border-2 border-rover-green'
+                        ? 'bg-dogwalking-green/20 text-dogwalking-green border-2 border-dogwalking-green'
                         : 'bg-gray-200 text-gray-400'
                     }`}>
                       {isCompleted ? (
@@ -462,7 +462,7 @@ const SitterOnboarding = () => {
                       )}
                     </div>
                     <span className={`text-center max-w-[80px] ${
-                      isCurrent ? 'text-rover-green font-medium' : 'text-muted-foreground'
+                      isCurrent ? 'text-dogwalking-green font-medium' : 'text-muted-foreground'
                     }`}>
                       {step.title}
                     </span>
@@ -491,12 +491,12 @@ const SitterOnboarding = () => {
             </Button>
 
             {currentStep === totalSteps ? (
-              <Button onClick={handleSubmit} className="bg-rover-green hover:bg-rover-green/90">
+              <Button onClick={handleSubmit} className="bg-dogwalking-green hover:bg-dogwalking-green/90">
                 Terminer l'inscription
                 <CheckCircle className="w-4 h-4 ml-2" />
               </Button>
             ) : (
-              <Button onClick={handleNext} className="bg-rover-green hover:bg-rover-green/90">
+              <Button onClick={handleNext} className="bg-dogwalking-green hover:bg-dogwalking-green/90">
                 Continuer
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>

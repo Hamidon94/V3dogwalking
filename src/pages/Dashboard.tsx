@@ -138,8 +138,8 @@ const Dashboard = () => {
                   {upcomingBookings.map((booking) => (
                     <div key={booking.id} className="flex items-center justify-between p-4 border rounded-lg">
                       <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-rover-green/10 rounded-full flex items-center justify-center">
-                          <PawPrint className="w-6 h-6 text-rover-green" />
+                        <div className="w-12 h-12 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+                          <PawPrint className="w-6 h-6 text-dogwalking-green" />
                         </div>
                         <div>
                           <p className="font-medium">{booking.service}</p>

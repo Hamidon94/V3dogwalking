@@ -85,7 +85,7 @@ const Search = () => {
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Search Header */}
-        <div className="rover-card p-6 mb-8">
+        <div className="dogwalking-card p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {/* Pet Type */}
             <div>
@@ -95,7 +95,7 @@ const Search = () => {
               <select 
                 value={filters.petType}
                 onChange={(e) => setFilters(prev => ({ ...prev, petType: e.target.value }))}
-                className="rover-input w-full"
+                className="dogwalking-input w-full"
               >
                 <option value="dog">Chien</option>
                 <option value="cat">Chat</option>
@@ -110,7 +110,7 @@ const Search = () => {
               <select 
                 value={filters.serviceType}
                 onChange={(e) => setFilters(prev => ({ ...prev, serviceType: e.target.value }))}
-                className="rover-input w-full"
+                className="dogwalking-input w-full"
               >
                 {serviceTypes.map(service => (
                   <option key={service.value} value={service.value}>
@@ -129,7 +129,7 @@ const Search = () => {
                 placeholder="Votre adresse"
                 value={filters.address}
                 onChange={(e) => setFilters(prev => ({ ...prev, address: e.target.value }))}
-                className="rover-input"
+                className="dogwalking-input"
               />
             </div>
 
@@ -142,7 +142,7 @@ const Search = () => {
                 type="date"
                 value={filters.startDate}
                 onChange={(e) => setFilters(prev => ({ ...prev, startDate: e.target.value }))}
-                className="rover-input"
+                className="dogwalking-input"
               />
             </div>
 
@@ -155,13 +155,13 @@ const Search = () => {
                 type="date"
                 value={filters.endDate}
                 onChange={(e) => setFilters(prev => ({ ...prev, endDate: e.target.value }))}
-                className="rover-input"
+                className="dogwalking-input"
               />
             </div>
           </div>
 
           <div className="mt-4 flex justify-center">
-            <Button className="rover-button-secondary px-8">
+            <Button className="dogwalking-button-secondary px-8">
               Rechercher
             </Button>
           </div>
@@ -170,9 +170,9 @@ const Search = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Filters Sidebar */}
           <div className="lg:col-span-1">
-            <div className="rover-card p-6 sticky top-8">
+            <div className="dogwalking-card p-6 sticky top-8">
               <div className="flex items-center space-x-2 mb-6">
-                <Filter className="w-5 h-5 text-rover-green" />
+                <Filter className="w-5 h-5 text-dogwalking-green" />
                 <h3 className="text-lg font-semibold text-gray-900">Filtres</h3>
               </div>
 
@@ -275,7 +275,7 @@ const Search = () => {
             {/* Sitters Grid */}
             <div className={`grid gap-6 ${viewMode === "grid" ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"}`}>
               {mockSitters.map((sitter) => (
-                <div key={sitter.id} className="rover-card p-6">
+                <div key={sitter.id} className="dogwalking-card p-6">
                   {/* Header */}
                   <div className="flex items-start space-x-4 mb-4">
                     <img 
@@ -289,7 +289,7 @@ const Search = () => {
                           {sitter.name}
                         </h3>
                         {sitter.isStarSitter && (
-                          <span className="bg-rover-orange text-white text-xs px-2 py-1 rounded-full font-medium">
+                          <span className="bg-dogwalking-orange text-white text-xs px-2 py-1 rounded-full font-medium">
                             STAR
                           </span>
                         )}
@@ -312,7 +312,7 @@ const Search = () => {
                     </div>
 
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-rover-green">
+                      <div className="text-2xl font-bold text-dogwalking-green">
                         {sitter.price}€
                       </div>
                       <div className="text-sm text-gray-500">par nuit</div>
@@ -329,7 +329,7 @@ const Search = () => {
                     {sitter.services.map((service, index) => (
                       <span 
                         key={index}
-                        className="bg-rover-green/10 text-rover-green text-xs px-2 py-1 rounded-full"
+                        className="bg-dogwalking-green/10 text-dogwalking-green text-xs px-2 py-1 rounded-full"
                       >
                         {service}
                       </span>
@@ -340,7 +340,7 @@ const Search = () => {
                   <div className="space-y-1 mb-4">
                     {sitter.features.slice(0, 2).map((feature, index) => (
                       <div key={index} className="flex items-center space-x-2">
-                        <div className="w-1.5 h-1.5 bg-rover-green rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-dogwalking-green rounded-full"></div>
                         <span className="text-sm text-gray-600">{feature}</span>
                       </div>
                     ))}
@@ -354,7 +354,7 @@ const Search = () => {
 
                   {/* Actions */}
                   <div className="flex space-x-3">
-                    <Button className="rover-button-primary flex-1">
+                    <Button className="dogwalking-button-primary flex-1">
                       Contacter
                     </Button>
                     <Button variant="outline" size="sm">

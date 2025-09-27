@@ -30,10 +30,10 @@ const Privacy = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-rover-green/10 to-rover-blue/10">
+        <section className="py-20 bg-gradient-to-br from-dogwalking-green/10 to-dogwalking-blue/10">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="w-20 h-20 mx-auto mb-6 bg-rover-green/10 rounded-full flex items-center justify-center">
-              <Shield className="w-10 h-10 text-rover-green" />
+            <div className="w-20 h-20 mx-auto mb-6 bg-dogwalking-green/10 rounded-full flex items-center justify-center">
+              <Shield className="w-10 h-10 text-dogwalking-green" />
             </div>
             
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -49,12 +49,12 @@ const Privacy = () => {
         {/* Introduction */}
         <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rover-card p-8 mb-12">
+            <div className="dogwalking-card p-8 mb-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Notre engagement envers votre vie privée
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Chez Rover, nous prenons votre vie privée au sérieux. Cette politique explique 
+                Chez DogWalking, nous prenons votre vie privée au sérieux. Cette politique explique 
                 comment nous collectons, utilisons, partageons et protégeons vos informations 
                 personnelles lorsque vous utilisez nos services. Nous nous engageons à être 
                 transparents sur nos pratiques et à vous donner le contrôle sur vos données.
@@ -69,10 +69,10 @@ const Privacy = () => {
               
               <div className="space-y-6">
                 {dataTypes.map((type, index) => (
-                  <div key={index} className="rover-card p-6">
+                  <div key={index} className="dogwalking-card p-6">
                     <div className="flex items-start space-x-4">
-                      <div className="w-12 h-12 bg-rover-green/10 rounded-full flex items-center justify-center flex-shrink-0">
-                        <div className="text-rover-green">
+                      <div className="w-12 h-12 bg-dogwalking-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div className="text-dogwalking-green">
                           {type.icon}
                         </div>
                       </div>
@@ -114,7 +114,7 @@ const Privacy = () => {
                 uniquement dans les cas suivants :
               </p>
               
-              <div className="rover-card p-6 mb-6">
+              <div className="dogwalking-card p-6 mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Avec d'autres utilisateurs</h3>
                 <p className="text-gray-600">
                   Certaines informations de profil sont visibles par les autres utilisateurs pour 
@@ -122,7 +122,7 @@ const Privacy = () => {
                 </p>
               </div>
 
-              <div className="rover-card p-6 mb-6">
+              <div className="dogwalking-card p-6 mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Avec nos prestataires de services</h3>
                 <p className="text-gray-600">
                   Nous travaillons avec des tiers de confiance pour le traitement des paiements, 
@@ -130,7 +130,7 @@ const Privacy = () => {
                 </p>
               </div>
 
-              <div className="rover-card p-6 mb-6">
+              <div className="dogwalking-card p-6 mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Pour des raisons légales</h3>
                 <p className="text-gray-600">
                   Nous pouvons divulguer des informations si requis par la loi ou pour protéger 
@@ -146,9 +146,9 @@ const Privacy = () => {
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="rover-card p-6">
+                <div className="dogwalking-card p-6">
                   <div className="flex items-center space-x-3 mb-3">
-                    <Lock className="w-6 h-6 text-rover-green" />
+                    <Lock className="w-6 h-6 text-dogwalking-green" />
                     <h4 className="font-semibold text-gray-900">Chiffrement</h4>
                   </div>
                   <p className="text-gray-600">
@@ -156,9 +156,9 @@ const Privacy = () => {
                   </p>
                 </div>
 
-                <div className="rover-card p-6">
+                <div className="dogwalking-card p-6">
                   <div className="flex items-center space-x-3 mb-3">
-                    <Eye className="w-6 h-6 text-rover-green" />
+                    <Eye className="w-6 h-6 text-dogwalking-green" />
                     <h4 className="font-semibold text-gray-900">Accès limité</h4>
                   </div>
                   <p className="text-gray-600">
@@ -174,7 +174,7 @@ const Privacy = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-rover-green rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-dogwalking-green rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <strong className="text-gray-900">Droit d'accès :</strong>
                     <span className="text-gray-600"> Demander une copie de vos données</span>
@@ -182,7 +182,7 @@ const Privacy = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-rover-green rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-dogwalking-green rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <strong className="text-gray-900">Droit de rectification :</strong>
                     <span className="text-gray-600"> Corriger des données inexactes</span>
@@ -190,7 +190,7 @@ const Privacy = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-rover-green rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-dogwalking-green rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <strong className="text-gray-900">Droit à l'effacement :</strong>
                     <span className="text-gray-600"> Supprimer vos données</span>
@@ -198,7 +198,7 @@ const Privacy = () => {
                 </div>
                 
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-rover-green rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-2 h-2 bg-dogwalking-green rounded-full mt-2 flex-shrink-0"></div>
                   <div>
                     <strong className="text-gray-900">Droit d'opposition :</strong>
                     <span className="text-gray-600"> Vous opposer au traitement</span>
@@ -237,9 +237,9 @@ const Privacy = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 bg-rover-gray-light">
+        <section className="py-16 bg-dogwalking-gray-light">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="rover-card p-8">
+            <div className="dogwalking-card p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Nous contacter
               </h2>
@@ -249,9 +249,9 @@ const Privacy = () => {
               </p>
               
               <div className="space-y-3 text-gray-700">
-                <p><strong>Email :</strong> privacy@rover.fr</p>
+                <p><strong>Email :</strong> privacy@dogwalking.fr</p>
                 <p><strong>Adresse :</strong> Délégué à la Protection des Données<br />
-                Rover France<br />
+                DogWalking France<br />
                 123 Avenue des Champs-Élysées<br />
                 75008 Paris, France</p>
                 <p><strong>Téléphone :</strong> 01 23 45 67 89</p>

@@ -52,7 +52,7 @@ const Signup = () => {
       
       // Temporary mock signup
       if (formData.email && formData.password) {
-        navigate(userType === "sitter" ? "/sitter-onboarding" : "/dashboard");
+        navigate(userType === "sitter" ? "/sitter-dashboard" : "/dashboard");
       }
     } catch (err: any) {
       setError(err.message || "Une erreur s'est produite");
@@ -81,13 +81,13 @@ const Signup = () => {
           </div>
 
           {/* Type Toggle */}
-          <div className="rover-card p-4">
+          <div className="dogwalking-card p-4">
             <div className="grid grid-cols-2 gap-2">
               <Link 
                 to="/signup?type=owner"
                 className={`p-3 rounded-lg text-center transition-colors ${
                   userType === "owner" 
-                    ? "bg-rover-green text-white" 
+                    ? "bg-dogwalking-green text-white" 
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -97,7 +97,7 @@ const Signup = () => {
                 to="/signup?type=sitter"
                 className={`p-3 rounded-lg text-center transition-colors ${
                   userType === "sitter" 
-                    ? "bg-rover-green text-white" 
+                    ? "bg-dogwalking-green text-white" 
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
@@ -107,7 +107,7 @@ const Signup = () => {
           </div>
 
           {/* Form */}
-          <div className="rover-card p-8">
+          <div className="dogwalking-card p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               {error && (
                 <Alert variant="destructive">
@@ -128,7 +128,7 @@ const Signup = () => {
                       value={formData.firstName}
                       onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
                       placeholder="Jean"
-                      className="rover-input pl-11"
+                      className="dogwalking-input pl-11"
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const Signup = () => {
                       value={formData.lastName}
                       onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
                       placeholder="Dupont"
-                      className="rover-input pl-11"
+                      className="dogwalking-input pl-11"
                     />
                   </div>
                 </div>
@@ -162,7 +162,7 @@ const Signup = () => {
                     value={formData.email}
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="jean.dupont@email.com"
-                    className="rover-input pl-11"
+                    className="dogwalking-input pl-11"
                   />
                 </div>
               </div>
@@ -179,7 +179,7 @@ const Signup = () => {
                     value={formData.password}
                     onChange={(e) => setFormData(prev => ({ ...prev, password: e.target.value }))}
                     placeholder="Au moins 8 caractères"
-                    className="rover-input pl-11 pr-11"
+                    className="dogwalking-input pl-11 pr-11"
                   />
                   <button
                     type="button"
@@ -203,7 +203,7 @@ const Signup = () => {
                     value={formData.confirmPassword}
                     onChange={(e) => setFormData(prev => ({ ...prev, confirmPassword: e.target.value }))}
                     placeholder="Répétez votre mot de passe"
-                    className="rover-input pl-11 pr-11"
+                    className="dogwalking-input pl-11 pr-11"
                   />
                   <button
                     type="button"
@@ -227,11 +227,11 @@ const Signup = () => {
                   />
                   <span className="text-sm text-gray-700">
                     J'accepte les{" "}
-                    <Link to="/terms" className="text-rover-green hover:underline">
+                    <Link to="/terms" className="text-dogwalking-green hover:underline">
                       Conditions d'utilisation
                     </Link>{" "}
                     et la{" "}
-                    <Link to="/privacy" className="text-rover-green hover:underline">
+                    <Link to="/privacy" className="text-dogwalking-green hover:underline">
                       Politique de confidentialité
                     </Link>
                   </span>
@@ -255,7 +255,7 @@ const Signup = () => {
               <Button
                 type="submit"
                 disabled={loading || !formData.agreeToTerms}
-                className="rover-button-secondary w-full py-3"
+                className="dogwalking-button-secondary w-full py-3"
               >
                 {loading ? "Création..." : "Créer mon compte"}
               </Button>
@@ -290,7 +290,7 @@ const Signup = () => {
             <div className="text-center mt-6 pt-6 border-t border-gray-200">
               <p className="text-gray-600">
                 Déjà un compte ?{" "}
-                <Link to="/login" className="font-medium text-rover-green hover:underline">
+                <Link to="/login" className="font-medium text-dogwalking-green hover:underline">
                   Se connecter
                 </Link>
               </p>
