@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Rover Design System - All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL format to match Rover.com design.
+*/
+
+@layer base {
+  :root {
+    /* Rover Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --rover-green: 159 100% 39%; /* #00C896 - Rover primary green */
+    --rover-green-dark: 159 100% 32%; /* Darker green for hover states */
+    --rover-blue: 214 98% 60%; /* #4285F4 - CTA button blue */
+    --rover-blue-dark: 214 98% 50%; /* Darker blue for hover */
+    --rover-gray-light: 210 10% 96%; /* Light gray backgrounds */
+    --rover-gray: 215 16% 47%; /* Text gray */
+    --rover-gray-dark: 222 13% 26%; /* Dark text */
+    --rover-orange: 25 95% 53%; /* Accent orange */
+    --rover-red: 0 84% 60%; /* Error/destructive */
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--rover-gray-dark);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--rover-gray-dark);
+
+    --primary: var(--rover-green);
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: var(--rover-gray-light);
+    --secondary-foreground: var(--rover-gray-dark);
+
+    /* Rover specific semantic colors */
+    --rover-search-bg: 0 0% 100%;
+    --rover-search-border: 214 20% 85%;
+    --rover-hero-overlay: 0 0% 0% / 0.3;
+
+    --muted: var(--rover-gray-light);
+    --muted-foreground: var(--rover-gray);
+
+    --accent: var(--rover-blue);
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: var(--rover-red);
+    --destructive-foreground: 0 0% 100%;
+
+    --border: var(--rover-search-border);
+    --input: var(--rover-search-border);
+    --ring: var(--rover-green);
+
+    --radius: 0.75rem; /* Rover uses more rounded corners */
+
+    /* Rover gradients and animations */
+    --rover-gradient-hero: linear-gradient(135deg, hsl(var(--rover-green)) 0%, hsl(var(--rover-blue)) 100%);
+    --rover-gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(var(--rover-gray-light)) 100%);
+    --rover-shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
+    --rover-shadow-elevated: 0 8px 30px hsl(0 0% 0% / 0.12);
+    --rover-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: var(--rover-gray-dark);
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Rover-specific utility classes */
+  .rover-hero-bg {
+    background: linear-gradient(135deg, hsl(var(--rover-green) / 0.9) 0%, hsl(var(--rover-blue) / 0.9) 100%);
+  }
+
+  .rover-card {
+    @apply bg-white rounded-xl shadow-[0_4px_20px_hsl(0_0%_0%_/_0.08)] border border-gray-100/50;
+    transition: var(--rover-transition);
+  }
+
+  .rover-card:hover {
+    @apply shadow-[0_8px_30px_hsl(0_0%_0%_/_0.12)] -translate-y-1;
+  }
+
+  .rover-button-primary {
+    @apply bg-[hsl(var(--rover-green))] hover:bg-[hsl(var(--rover-green-dark))] text-white font-semibold rounded-xl px-6 py-3;
+    transition: var(--rover-transition);
+  }
+
+  .rover-button-secondary {
+    @apply bg-[hsl(var(--rover-blue))] hover:bg-[hsl(var(--rover-blue-dark))] text-white font-semibold rounded-xl px-6 py-3;
+    transition: var(--rover-transition);
+  }
+
+  .rover-input {
+    @apply border-[hsl(var(--rover-search-border))] rounded-xl px-4 py-3 focus:border-[hsl(var(--rover-green))] focus:ring-2 focus:ring-[hsl(var(--rover-green)_/_0.2)];
+    transition: var(--rover-transition);
+  }
+
+  .rover-text-green {
+    color: hsl(var(--rover-green));
+  }
+
+  .rover-text-gray {
+    color: hsl(var(--rover-gray));
+  }
+
+  .rover-bg-gradient {
+    background: var(--rover-gradient-hero);
+  }
+}
