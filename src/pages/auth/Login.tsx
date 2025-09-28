@@ -7,6 +7,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { authenticateUser, setCurrentUser } from "@/lib/auth";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -24,14 +25,26 @@ const Login = () => {
     setError("");
 
     try {
-      // TODO: Implement Supabase auth login
-      console.log("Login attempt:", formData.email);
+      const user = authenticateUser(formData.email, formData.password);
       
-      // Temporary mock login
-      if (formData.email && formData.password) {
-        navigate("/dashboard");
+      if (user) {
+        setCurrentUser(user);
+        
+        // Redirection basée sur le type d'utilisateur
+        switch (user.type) {
+          case 'admin':
+            navigate("/admin");
+            break;
+          case 'sitter':
+            navigate("/sitter-dashboard");
+            break;
+          case 'owner':
+          default:
+            navigate("/dashboard");
+            break;
+        }
       } else {
-        setError("Veuillez remplir tous les champs");
+        setError("Email ou mot de passe incorrect");
       }
     } catch (err: any) {
       setError(err.message || "Une erreur s'est produite");

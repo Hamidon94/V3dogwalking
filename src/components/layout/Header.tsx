@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/dogwalking-logo.png" alt="DogWalking" className="w-16 h-16 border-0" />
+            <img src="/dogwalking-logo.png" alt="DogWalking" className="w-16 h-16 border-0 outline-none ring-0" style={{border: 'none', outline: 'none'}} />
             <div className="text-2xl font-bold text-blue-600">
               DogWalking
             </div>
@@ -51,10 +51,10 @@ const Header = () => {
               Aide
             </Button>
             
-            <Link to="/admin-login">
+            <Link to="/test-accounts">
               <Button variant="ghost" size="sm" className="text-gray-600">
                 <Globe className="w-4 h-4 mr-1" />
-                Admin
+                Test
               </Button>
             </Link>
 

@@ -8,6 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Eye, EyeOff, Mail, Lock, User } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { registerUser, setCurrentUser } from "@/lib/auth";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -47,13 +48,16 @@ const Signup = () => {
     }
 
     try {
-      // TODO: Implement Supabase auth signup
-      console.log("Signup attempt:", formData.email, "Type:", userType);
+      const newUser = registerUser({
+        email: formData.email,
+        password: formData.password,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        type: userType as 'owner' | 'sitter'
+      });
       
-      // Temporary mock signup
-      if (formData.email && formData.password) {
-        navigate(userType === "sitter" ? "/sitter-dashboard" : "/dashboard");
-      }
+      setCurrentUser(newUser);
+      navigate(userType === "sitter" ? "/sitter-dashboard" : "/dashboard");
     } catch (err: any) {
       setError(err.message || "Une erreur s'est produite");
     } finally {
