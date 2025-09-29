@@ -28,15 +28,36 @@ const SitterDashboard = () => {
   const [activeTab, setActiveTab] = useState("overview");
   const [profileCompletion, setProfileCompletion] = useState(65);
   const [isVerified, setIsVerified] = useState(false);
-
-  const verificationSteps = [
+  const [verificationSteps, setVerificationSteps] = useState([
     { id: 1, title: "Photo de profil", completed: true, required: true },
     { id: 2, title: "Informations personnelles", completed: true, required: true },
     { id: 3, title: "Vérification d'identité", completed: false, required: true },
     { id: 4, title: "Références", completed: false, required: true },
     { id: 5, title: "Assurance responsabilité civile", completed: true, required: true },
     { id: 6, title: "Formation premiers secours", completed: false, required: false }
-  ];
+  ]);
+
+  const handleValidationStep = (stepId: number) => {
+    setVerificationSteps(prev => 
+      prev.map(step => 
+        step.id === stepId ? { ...step, completed: true } : step
+      )
+    );
+    
+    // Calculer le nouveau pourcentage de completion
+    const updatedSteps = verificationSteps.map(step => 
+      step.id === stepId ? { ...step, completed: true } : step
+    );
+    const completedRequired = updatedSteps.filter(step => step.required && step.completed).length;
+    const totalRequired = updatedSteps.filter(step => step.required).length;
+    const newCompletion = Math.round((completedRequired / totalRequired) * 100);
+    setProfileCompletion(newCompletion);
+    
+    // Vérifier si le profil est entièrement validé
+    if (completedRequired === totalRequired) {
+      setIsVerified(true);
+    }
+  };
 
   const upcomingBookings = [
     {
@@ -239,7 +260,12 @@ const SitterDashboard = () => {
                         </div>
                       </div>
                       {!step.completed && (
-                        <Button size="sm" variant="outline" className="border-blue-200 text-blue-600 hover:bg-blue-50">
+                        <Button 
+                          size="sm" 
+                          variant="outline" 
+                          className="border-blue-200 text-blue-600 hover:bg-blue-50"
+                          onClick={() => handleValidationStep(step.id)}
+                        >
                           {step.id === 3 ? "Télécharger pièce d'identité" : 
                            step.id === 4 ? "Ajouter références" :
                            step.id === 6 ? "Suivre formation" : "Compléter"}
