@@ -23,7 +23,7 @@ const TestAccounts = () => {
       email: 'marie.sitter@dogwalking.fr',
       password: 'sitter123',
       name: 'Marie Dupont (Pet Sitter)',
-      description: 'Compte pet sitter avec dashboard de validation',
+      description: 'Compte promeneur certifié avec dashboard de validation',
       icon: Heart,
       color: 'bg-blue-100 text-blue-600',
       dashboard: '/sitter-dashboard'
@@ -142,7 +142,7 @@ const TestAccounts = () => {
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Connexion et inscription</li>
                     <li>• Dashboards différenciés par type d'utilisateur</li>
-                    <li>• Validation de profil pour pet sitters</li>
+                    <li>• Validation de profil pour promeneur certifiés</li>
                     <li>• Navigation complète</li>
                     <li>• Thème bleu et blanc</li>
                     <li>• Logo sans bordure</li>
@@ -155,7 +155,7 @@ const TestAccounts = () => {
                     <li>2. Explorer les dashboards respectifs</li>
                     <li>3. Vérifier les liens de navigation</li>
                     <li>4. Tester l'inscription de nouveaux utilisateurs</li>
-                    <li>5. Vérifier le processus de validation (pet sitters)</li>
+                    <li>5. Vérifier le processus de validation (promeneur certifiés)</li>
                   </ol>
                 </div>
               </div>

@@ -72,10 +72,10 @@ const Search = () => {
   ];
 
   const serviceTypes = [
-    { value: "boarding", label: "Hébergement • chez le pet sitter" },
+    { value: "boarding", label: "Hébergement • chez le promeneur certifié" },
     { value: "house-sitting", label: "Garde à domicile • chez vous" },
     { value: "drop-in-visits", label: "Visites à domicile • visites chez vous" },
-    { value: "doggy-daycare", label: "Garderie • chez le pet sitter" },
+    { value: "doggy-daycare", label: "Garderie • chez le promeneur certifié" },
     { value: "dog-walking", label: "Promenade • dans votre quartier" },
   ];
 
@@ -249,7 +249,7 @@ const Search = () => {
                   Pet sitters près de vous
                 </h2>
                 <p className="text-gray-600">
-                  {mockSitters.length} pet sitters trouvés
+                  {mockSitters.length} promeneur certifiés trouvés
                 </p>
               </div>
 
@@ -368,7 +368,7 @@ const Search = () => {
             {/* Load More */}
             <div className="text-center mt-8">
               <Button variant="outline" className="px-8">
-                Voir plus de pet sitters
+                Voir plus de promeneur certifiés
               </Button>
             </div>
           </div>

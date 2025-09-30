@@ -74,12 +74,12 @@ const Signup = () => {
           {/* Header */}
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              {userType === "sitter" ? "Devenir Pet Sitter" : "Créer un compte"}
+              {userType === "sitter" ? "Devenir Promeneur Certifié" : "Créer un compte"}
             </h1>
             <p className="text-gray-600">
               {userType === "sitter" 
-                ? "Rejoignez notre communauté de pet sitters" 
-                : "Trouvez le pet sitter parfait pour votre animal"
+                ? "Rejoignez notre communauté de promeneur certifiés" 
+                : "Trouvez le promeneur certifié parfait pour votre animal"
               }
             </p>
           </div>
@@ -105,7 +105,7 @@ const Signup = () => {
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                Pet Sitter
+                Promeneur Certifié
               </Link>
             </div>
           </div>

@@ -20,25 +20,24 @@ const HeroSection = () => {
           {/* Left side - Text Content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Soins Aimants pour Vos Animaux
+              Trouvez le Promeneur Certifié Idéal
               <br />
-              <span className="dogwalking-text-green">Dans Votre Quartier</span>™
+              <span className="dogwalking-text-green">pour Votre Compagnon</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">
-              Réservez des pet sitters et promeneurs de confiance.
-            </p>
+              Réservez des promeneurs certifiés et promeneurs de confiance.</p>
 
             {/* Mobile CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 lg:hidden mb-8">
               <Link to="/search">
                 <Button className="dogwalking-button-secondary w-full sm:w-auto px-8 py-4 text-lg">
-                  Trouver un Pet Sitter
+                  Trouver un Promeneur Certifié
                 </Button>
               </Link>
               <Link to="/become-sitter">
                 <Button variant="outline" className="w-full sm:w-auto px-8 py-4 text-lg bg-white/10 border-white text-white hover:bg-white hover:text-gray-900">
-                  Devenir Pet Sitter
+                  Devenir Promeneur Certifié
                 </Button>
               </Link>
             </div>

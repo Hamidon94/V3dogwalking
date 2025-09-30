@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
       name: "Sarah M.",
       location: "Paris, France",
       rating: 5,
-      text: "DogWalking a changé ma vie ! Je peux maintenant voyager l'esprit tranquille en sachant que mon chien Max est entre de bonnes mains. Les pet sitters sont incroyables !",
+      text: "DogWalking a changé ma vie ! Je peux maintenant voyager l'esprit tranquille en sachant que mon chien Max est entre de bonnes mains. Les promeneurs certifiés sont incroyables !",
       petName: "Max",
       petType: "Golden Retriever"
     },

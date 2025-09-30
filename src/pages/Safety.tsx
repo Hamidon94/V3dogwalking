@@ -8,12 +8,12 @@ const Safety = () => {
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Vérification d'identité",
-      description: "Tous nos pet sitters passent une vérification d'identité par un tiers de confiance avant de pouvoir accepter des réservations."
+      description: "Tous nos promeneur certifiés passent une vérification d'identité par un tiers de confiance avant de pouvoir accepter des réservations."
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
       title: "Évaluations et avis",
-      description: "Consultez les avis authentiques d'autres propriétaires d'animaux pour choisir le pet sitter idéal en toute confiance."
+      description: "Consultez les avis authentiques d'autres propriétaires d'animaux pour choisir le promeneur certifié idéal en toute confiance."
     },
     {
       icon: <Phone className="w-8 h-8" />,
@@ -23,7 +23,7 @@ const Safety = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Rencontres préalables",
-      description: "Organisez une rencontre gratuite avec votre pet sitter avant la première réservation pour vous assurer du bon feeling."
+      description: "Organisez une rencontre gratuite avec votre promeneur certifié avant la première réservation pour vous assurer du bon feeling."
     }
   ];
 
@@ -49,7 +49,7 @@ const Safety = () => {
     {
       category: "Avant la garde",
       tips: [
-        "Organisez une rencontre préalable avec le pet sitter",
+        "Organisez une rencontre préalable avec le promeneur certifié",
         "Partagez toutes les informations médicales importantes",
         "Laissez les coordonnées de votre vétérinaire",
         "Préparez une trousse de premiers secours"
@@ -58,7 +58,7 @@ const Safety = () => {
     {
       category: "Pendant la garde",
       tips: [
-        "Restez en contact avec votre pet sitter",
+        "Restez en contact avec votre promeneur certifié",
         "Demandez des nouvelles et photos régulièrement",
         "Signalez tout comportement inhabituel",
         "Gardez votre téléphone à portée de main"
@@ -251,7 +251,7 @@ const Safety = () => {
               Réservez en toute sécurité
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Trouvez le pet sitter parfait avec la garantie de nos standards de sécurité
+              Trouvez le promeneur certifié parfait avec la garantie de nos standards de sécurité
             </p>
             
             <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">

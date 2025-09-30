@@ -25,7 +25,7 @@ const Header = () => {
               className="flex items-center space-x-1 text-gray-700 hover:text-dogwalking-green transition-colors"
             >
               <Search className="w-4 h-4" />
-              <span>Rechercher des pet sitters</span>
+              <span>Rechercher des promeneurs certifiés</span>
             </Link>
             
             <Link
@@ -33,7 +33,7 @@ const Header = () => {
               className="flex items-center space-x-1 text-gray-700 hover:text-dogwalking-green transition-colors"
             >
               <Heart className="w-4 h-4" />
-              <span>Devenir pet sitter</span>
+              <span>Devenir promeneur certifié</span>
             </Link>
             
             <Link
@@ -101,7 +101,7 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Search className="w-4 h-4" />
-                <span>Rechercher des pet sitters</span>
+                <span>Rechercher des promeneurs certifiés</span>
               </Link>
               
               <Link
@@ -110,7 +110,7 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <Heart className="w-4 h-4" />
-                <span>Devenir pet sitter</span>
+                <span>Devenir promeneur certifié</span>
               </Link>
               
               <Link

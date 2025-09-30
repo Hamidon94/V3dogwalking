@@ -27,7 +27,7 @@ const HouseSitting = () => {
                 </h1>
                 
                 <p className="text-xl text-gray-600 mb-8">
-                  Votre pet sitter s'occupe de vos animaux et de votre maison. Vos animaux recevront toute l'attention dont ils ont besoin dans le confort de leur foyer.
+                  Votre promeneur certifié s'occupe de vos animaux et de votre maison. Vos animaux recevront toute l'attention dont ils ont besoin dans le confort de leur foyer.
                 </p>
 
                 <div className="mb-8">
@@ -36,7 +36,7 @@ const HouseSitting = () => {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Link to="/services/boarding" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
-                      Hébergement • chez le pet sitter
+                      Hébergement • chez le promeneur certifié
                     </Link>
                     <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
                       Garde à domicile • chez vous
@@ -45,7 +45,7 @@ const HouseSitting = () => {
                       Visites à domicile • visites à votre domicile
                     </Link>
                     <Link to="/services/doggy-daycare" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
-                      Garderie pour chien • chez le pet sitter
+                      Garderie pour chien • chez le promeneur certifié
                     </Link>
                     <Link to="/services/dog-walking" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Promenade de chien • dans votre quartier
@@ -103,7 +103,7 @@ const HouseSitting = () => {
                   Attention personnalisée
                 </h3>
                 <p className="text-gray-600">
-                  Votre pet sitter se consacre entièrement à vos animaux et votre maison.
+                  Votre promeneur certifié se consacre entièrement à vos animaux et votre maison.
                 </p>
               </div>
             </div>
@@ -117,12 +117,12 @@ const HouseSitting = () => {
               Partez l'esprit tranquille
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Trouvez un pet sitter de confiance pour s'occuper de vos animaux et de votre maison
+              Trouvez un promeneur certifié de confiance pour s'occuper de vos animaux et de votre maison
             </p>
             
             <Link to="/search?serviceType=house-sitting">
               <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
-                Trouver un pet sitter
+                Trouver un promeneur certifié
               </Button>
             </Link>
           </div>

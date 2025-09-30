@@ -38,7 +38,7 @@ const SitterOnboarding = () => {
     city: "",
     postalCode: "",
     
-    // Étape 2: Profil pet sitter
+    // Étape 2: Profil promeneur certifié
     bio: "",
     experience: "",
     ownsPets: false,

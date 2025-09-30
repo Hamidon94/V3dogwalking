@@ -11,8 +11,8 @@ const Services = () => {
     {
       id: "boarding",
       title: "Hébergement",
-      subtitle: "chez le pet sitter",
-      description: "Votre animal reste dans le foyer chaleureux de votre pet sitter. Il sera traité comme un membre de la famille dans un environnement confortable.",
+      subtitle: "chez le promeneur certifié",
+      description: "Votre animal reste dans le foyer chaleureux de votre promeneur certifié. Il sera traité comme un membre de la famille dans un environnement confortable.",
       icon: <Home className="w-8 h-8" />,
       image: dogBoardingImage,
       link: "/services/boarding",
@@ -22,7 +22,7 @@ const Services = () => {
       id: "house-sitting", 
       title: "Garde à domicile",
       subtitle: "chez vous",
-      description: "Votre pet sitter s'occupe de vos animaux et de votre maison. Vos animaux recevront toute l'attention dont ils ont besoin dans le confort de leur foyer.",
+      description: "Votre promeneur certifié s'occupe de vos animaux et de votre maison. Vos animaux recevront toute l'attention dont ils ont besoin dans le confort de leur foyer.",
       icon: <Heart className="w-8 h-8" />,
       image: dogBoardingImage,
       link: "/services/house-sitting",
@@ -41,8 +41,8 @@ const Services = () => {
     {
       id: "doggy-daycare",
       title: "Garderie pour chien",
-      subtitle: "chez le pet sitter", 
-      description: "Votre chien passe la journée chez votre pet sitter. Il joue et socialise dans un environnement sûr et supervisé.",
+      subtitle: "chez le promeneur certifié", 
+      description: "Votre chien passe la journée chez votre promeneur certifié. Il joue et socialise dans un environnement sûr et supervisé.",
       icon: <Users className="w-8 h-8" />,
       image: dogBoardingImage,
       link: "/services/doggy-daycare",
@@ -170,10 +170,10 @@ const Services = () => {
                     <tr>
                       <td className="py-4 px-4">
                         <div className="font-medium text-gray-900">Hébergement</div>
-                        <div className="text-sm text-gray-500">chez le pet sitter</div>
+                        <div className="text-sm text-gray-500">chez le promeneur certifié</div>
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">1+ nuits</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Chez le promeneur certifié</td>
                       <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">25-40€/nuit</td>
                       <td className="py-4 px-4 text-center text-gray-700">Vacances, voyages</td>
                     </tr>
@@ -200,10 +200,10 @@ const Services = () => {
                     <tr>
                       <td className="py-4 px-4">
                         <div className="font-medium text-gray-900">Garderie</div>
-                        <div className="text-sm text-gray-500">chez le pet sitter</div>
+                        <div className="text-sm text-gray-500">chez le promeneur certifié</div>
                       </td>
                       <td className="py-4 px-4 text-center text-gray-700">Journée</td>
-                      <td className="py-4 px-4 text-center text-gray-700">Chez le pet sitter</td>
+                      <td className="py-4 px-4 text-center text-gray-700">Chez le promeneur certifié</td>
                       <td className="py-4 px-4 text-center font-semibold text-dogwalking-green">20-35€/jour</td>
                       <td className="py-4 px-4 text-center text-gray-700">Socialisation</td>
                     </tr>
@@ -231,18 +231,18 @@ const Services = () => {
               Prêt à trouver le service parfait ?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Commencez votre recherche et trouvez le pet sitter idéal près de chez vous
+              Commencez votre recherche et trouvez le promeneur certifié idéal près de chez vous
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/search">
                 <Button className="dogwalking-button-primary bg-white text-dogwalking-green hover:bg-gray-100 px-8 py-4 text-lg">
-                  Trouver un pet sitter
+                  Trouver un promeneur certifié
                 </Button>
               </Link>
               <Link to="/become-sitter">
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
-                  Devenir pet sitter
+                  Devenir promeneur certifié
                 </Button>
               </Link>
             </div>
