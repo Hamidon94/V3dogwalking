@@ -1,0 +1,42 @@
+/* Suppression des éléments de débogage et numéros parasites */
+
+/* Supprimer tous les overlays de débogage */
+[data-testid*="index"],
+[data-index],
+.debug-overlay,
+.debug-number,
+*[style*="position: absolute"][style*="z-index: 999"],
+*[style*="position: fixed"][style*="z-index: 999"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Supprimer les pseudo-éléments qui ajoutent du contenu numérique */
+*::before,
+*::after {
+  content: none !important;
+}
+
+/* Réinitialiser les compteurs CSS */
+* {
+  counter-reset: none !important;
+  counter-increment: none !important;
+}
+
+/* Supprimer les éléments avec des numéros colorés */
+[style*="background-color"][style*="color"][style*="position: absolute"] {
+  display: none !important;
+}
+
+/* Masquer les éléments de débogage spécifiques */
+div[style*="position: absolute"][style*="top:"][style*="left:"][style*="width: 20px"][style*="height: 20px"] {
+  display: none !important;
+}
+
+/* Supprimer les annotations de débogage */
+.debug-annotation,
+.element-index,
+.browser-debug {
+  display: none !important;
+}

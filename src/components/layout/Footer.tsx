@@ -41,9 +41,9 @@ const Footer = () => {
                   <span className="text-blue-600 text-xl">🚶</span>
                 </div>
                 <div>
-                  <Link to="/services/dog-walking" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                  <a href="/#services" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
                     Promenade de chien
-                  </Link>
+                  </a>
                   <p className="text-gray-500 text-xs mt-1">Exercice quotidien personnalisé</p>
                 </div>
               </li>
@@ -52,9 +52,9 @@ const Footer = () => {
                   <span className="text-blue-600 text-xl">🏠</span>
                 </div>
                 <div>
-                  <Link to="/services/boarding" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                  <a href="/#services" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
                     Hébergement
-                  </Link>
+                  </a>
                   <p className="text-gray-500 text-xs mt-1">Séjour confortable chez l'habitant</p>
                 </div>
               </li>
@@ -63,9 +63,9 @@ const Footer = () => {
                   <span className="text-blue-600 text-xl">🏡</span>
                 </div>
                 <div>
-                  <Link to="/services/house-sitting" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                  <a href="/#services" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
                     Garde à domicile
-                  </Link>
+                  </a>
                   <p className="text-gray-500 text-xs mt-1">Surveillance 24h/24 chez vous</p>
                 </div>
               </li>
@@ -74,9 +74,9 @@ const Footer = () => {
                   <span className="text-blue-600 text-xl">🚪</span>
                 </div>
                 <div>
-                  <Link to="/services/drop-in-visits" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                  <a href="/#services" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
                     Visites à domicile
-                  </Link>
+                  </a>
                   <p className="text-gray-500 text-xs mt-1">Visites courtes et régulières</p>
                 </div>
               </li>
@@ -85,9 +85,9 @@ const Footer = () => {
                   <span className="text-blue-600 text-xl">🎾</span>
                 </div>
                 <div>
-                  <Link to="/services/doggy-daycare" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
+                  <a href="/#services" className="text-gray-900 hover:text-blue-600 transition-colors font-medium">
                     Garderie pour chien
-                  </Link>
+                  </a>
                   <p className="text-gray-500 text-xs mt-1">Socialisation et jeux en groupe</p>
                 </div>
               </li>
