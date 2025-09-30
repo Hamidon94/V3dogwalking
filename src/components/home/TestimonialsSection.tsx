@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       name: "Pierre L.",
       location: "Lyon, France",
       rating: 5,
-      text: "Excellent service ! La communication avec le pet sitter était parfaite, et j'ai reçu des photos de Luna tous les jours. Je recommande vivement !",
+      text: "Excellent service ! La communication avec le promeneur certifié était parfaite, et j'ai reçu des photos de Luna tous les jours. Je recommande vivement !",
       petName: "Luna",
       petType: "Chat Persan"
     },
@@ -34,7 +34,7 @@ const TestimonialsSection = () => {
       name: "Antoine R.",
       location: "Toulouse, France",
       rating: 5,
-      text: "Service exceptionnel ! Le pet sitter a pris soin de mes deux chats comme s'ils étaient les siens. Interface facile à utiliser et réservation simple.",
+      text: "Service exceptionnel ! Le promeneur certifié a pris soin de mes deux chats comme s'ils étaient les siens. Interface facile à utiliser et réservation simple.",
       petName: "Milo & Simba",
       petType: "Chats domestiques"
     }

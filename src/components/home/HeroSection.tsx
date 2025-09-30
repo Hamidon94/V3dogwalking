@@ -26,7 +26,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-8 font-medium">
-              Réservez des promeneurs certifiés et promeneurs de confiance.</p>
+              Réservez des promeneurs certifiés de confiance.</p>
 
             {/* Mobile CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 lg:hidden mb-8">
