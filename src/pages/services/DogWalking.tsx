@@ -74,7 +74,7 @@ const DogWalking = () => {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Link to="/services/boarding" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
-                      Hébergement • chez le pet sitter
+                      Hébergement • chez le promeneur certifié
                     </Link>
                     <Link to="/services/house-sitting" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Garde à domicile • chez vous
@@ -83,7 +83,7 @@ const DogWalking = () => {
                       Visites à domicile • visites à votre domicile
                     </Link>
                     <Link to="/services/doggy-daycare" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
-                      Garderie pour chien • chez le pet sitter
+                      Garderie pour chien • chez le promeneur certifié
                     </Link>
                     <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
                       Promenade de chien • dans votre quartier

@@ -50,7 +50,7 @@ const Help = () => {
 
   const faqs = [
     {
-      question: "Comment choisir le bon pet sitter ?",
+      question: "Comment choisir le bon promeneur certifié ?",
       answer: "Consultez les profils détaillés, lisez les avis d'autres propriétaires, vérifiez les certifications et organisez une rencontre gratuite avant de réserver."
     },
     {
@@ -62,16 +62,16 @@ const Help = () => {
       answer: "Vous pouvez annuler dans votre tableau de bord jusqu'à 24h avant le début de la garde. Les conditions d'annulation varient selon le délai."
     },
     {
-      question: "Que faire si mon pet sitter ne répond pas ?",
+      question: "Que faire si mon promeneur certifié ne répond pas ?",
       answer: "Contactez notre équipe de support qui interviendra pour résoudre le problème et vous aider à trouver une solution alternative si nécessaire."
     },
     {
-      question: "Comment sont vérifiés les pet sitters ?",
-      answer: "Tous nos pet sitters passent une vérification d'identité par un tiers, nous vérifions leurs références et ils doivent maintenir d'excellentes évaluations."
+      question: "Comment sont vérifiés les promeneur certifiés ?",
+      answer: "Tous nos promeneur certifiés passent une vérification d'identité par un tiers, nous vérifions leurs références et ils doivent maintenir d'excellentes évaluations."
     },
     {
       question: "Puis-je modifier ma réservation après confirmation ?",
-      answer: "Les modifications dépendent de la disponibilité du pet sitter. Contactez-le directement via notre messagerie pour discuter des changements."
+      answer: "Les modifications dépendent de la disponibilité du promeneur certifié. Contactez-le directement via notre messagerie pour discuter des changements."
     }
   ];
 
@@ -272,10 +272,10 @@ const Help = () => {
               {[
                 "Comment préparer la première garde de mon animal ?",
                 "Que faire en cas d'urgence vétérinaire ?",
-                "Comment devenir un pet sitter sur DogWalking ?",
+                "Comment devenir un promeneur certifié sur DogWalking ?",
                 "Comprendre les tarifs et les paiements",
                 "Conseils pour une rencontre réussie",
-                "Gérer les communications avec votre pet sitter"
+                "Gérer les communications avec votre promeneur certifié"
               ].map((title, index) => (
                 <div key={index} className="dogwalking-card p-6 hover:shadow-lg transition-shadow cursor-pointer">
                   <h3 className="font-medium text-gray-900 mb-2">{title}</h3>

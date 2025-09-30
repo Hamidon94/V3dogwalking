@@ -15,13 +15,13 @@ const Boarding = () => {
     },
     {
       icon: <Heart className="w-6 h-6" />,
-      title: "Des pet sitters passionnés",
-      description: "Nos pet sitters adorent les animaux et les traitent comme les leurs. Votre compagnon sera entre de bonnes mains aimantes."
+      title: "Des promeneur certifiés passionnés",
+      description: "Nos promeneur certifiés adorent les animaux et les traitent comme les leurs. Votre compagnon sera entre de bonnes mains aimantes."
     },
     {
       icon: <Shield className="w-6 h-6" />,
       title: "Sécurité et tranquillité d'esprit",
-      description: "Tous nos pet sitters sont vérifiés et couverts par la DogWalking Guarantee jusqu'à 25 000 € en soins vétérinaires."
+      description: "Tous nos promeneur certifiés sont vérifiés et couverts par la DogWalking Guarantee jusqu'à 25 000 € en soins vétérinaires."
     }
   ];
 
@@ -55,7 +55,7 @@ const Boarding = () => {
                 </h1>
                 
                 <p className="text-xl text-gray-600 mb-8">
-                  Votre animal reste dans le foyer chaleureux de votre pet sitter. Il sera traité comme un membre de la famille dans un environnement confortable.
+                  Votre animal reste dans le foyer chaleureux de votre promeneur certifié. Il sera traité comme un membre de la famille dans un environnement confortable.
                 </p>
 
                 {/* Service Navigation */}
@@ -65,7 +65,7 @@ const Boarding = () => {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-4 py-2 bg-dogwalking-green text-white rounded-full text-sm">
-                      Hébergement • chez le pet sitter
+                      Hébergement • chez le promeneur certifié
                     </span>
                     <Link to="/services/house-sitting" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Garde à domicile • chez vous
@@ -74,7 +74,7 @@ const Boarding = () => {
                       Visites à domicile • visites à votre domicile
                     </Link>
                     <Link to="/services/doggy-daycare" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
-                      Garderie pour chien • chez le pet sitter
+                      Garderie pour chien • chez le promeneur certifié
                     </Link>
                     <Link to="/services/dog-walking" className="px-4 py-2 bg-white border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition-colors">
                       Promenade de chien • dans votre quartier
@@ -187,7 +187,7 @@ const Boarding = () => {
                 {
                   step: "1",
                   title: "Recherchez",
-                  description: "Trouvez des pet sitters près de chez vous et consultez leurs profils détaillés."
+                  description: "Trouvez des promeneur certifiés près de chez vous et consultez leurs profils détaillés."
                 },
                 {
                   step: "2", 
@@ -251,7 +251,7 @@ const Boarding = () => {
                 <div className="text-3xl font-bold text-dogwalking-green mb-2">25-40€</div>
                 <p className="text-gray-600 mb-4">par nuit</p>
                 <ul className="text-sm text-gray-600 space-y-2">
-                  <li>Hébergement chez le pet sitter</li>
+                  <li>Hébergement chez le promeneur certifié</li>
                   <li>Promenades quotidiennes</li>
                   <li>Mises à jour avec photos</li>
                 </ul>
@@ -305,7 +305,7 @@ const Boarding = () => {
               </Link>
               <Link to="/become-sitter">
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-dogwalking-green px-8 py-4 text-lg">
-                  Devenir pet sitter
+                  Devenir promeneur certifié
                 </Button>
               </Link>
             </div>
