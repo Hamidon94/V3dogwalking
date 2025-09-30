@@ -42,6 +42,13 @@ const Header = () => {
             >
               Nos services
             </Link>
+            
+            <Link
+              to="/blog"
+              className="text-gray-700 hover:text-dogwalking-green transition-colors"
+            >
+              Blog
+            </Link>
           </nav>
 
           {/* Right side buttons */}

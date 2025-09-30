@@ -72,11 +72,13 @@ const Dashboard = () => {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
-          <TabsList className="grid w-full grid-cols-4">
+          <TabsList className="grid w-full grid-cols-6">
             <TabsTrigger value="overview">Aperçu</TabsTrigger>
             <TabsTrigger value="bookings">Réservations</TabsTrigger>
             <TabsTrigger value="pets">Mes Animaux</TabsTrigger>
             <TabsTrigger value="messages">Messages</TabsTrigger>
+            <TabsTrigger value="subscription">Abonnement</TabsTrigger>
+            <TabsTrigger value="history">Historique</TabsTrigger>
           </TabsList>
 
           <TabsContent value="overview" className="space-y-6">
@@ -222,6 +224,142 @@ const Dashboard = () => {
                 <div className="text-center py-8">
                   <Users className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
                   <p className="text-muted-foreground">Aucune conversation pour le moment</p>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="subscription" className="space-y-6">
+            <Card className="border-blue-200">
+              <CardHeader>
+                <CardTitle className="text-blue-600">Abonnement Premium</CardTitle>
+                <CardDescription>Gérez votre abonnement et vos avantages</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="flex items-center justify-between p-4 bg-blue-50 rounded-lg">
+                  <div>
+                    <h3 className="font-semibold text-blue-900">Plan Gratuit</h3>
+                    <p className="text-sm text-blue-700">3 réservations par mois</p>
+                  </div>
+                  <Badge variant="outline" className="border-blue-200 text-blue-600">Actuel</Badge>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <Card className="border-blue-200">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Premium</CardTitle>
+                      <CardDescription>19€/mois</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm">
+                        <li>✅ Réservations illimitées</li>
+                        <li>✅ Support prioritaire</li>
+                        <li>✅ Assurance premium</li>
+                        <li>✅ Rapports détaillés</li>
+                      </ul>
+                      <Button className="w-full mt-4 bg-blue-600 hover:bg-blue-700">
+                        Passer au Premium
+                      </Button>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card className="border-blue-200">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Famille</CardTitle>
+                      <CardDescription>29€/mois</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm">
+                        <li>✅ Tout Premium inclus</li>
+                        <li>✅ Jusqu'à 5 animaux</li>
+                        <li>✅ Partage familial</li>
+                        <li>✅ Réductions exclusives</li>
+                      </ul>
+                      <Button className="w-full mt-4 bg-blue-600 hover:bg-blue-700">
+                        Choisir Famille
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          <TabsContent value="history" className="space-y-6">
+            <Card className="border-blue-200">
+              <CardHeader>
+                <CardTitle>Historique des services</CardTitle>
+                <CardDescription>Consultez l'historique complet de vos réservations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {[
+                    {
+                      id: 1,
+                      service: "Promenade de chien",
+                      petSitter: "Marie D.",
+                      date: "15 Sept 2024",
+                      pet: "Max",
+                      status: "Terminé",
+                      price: "25€",
+                      rating: 5
+                    },
+                    {
+                      id: 2,
+                      service: "Garde à domicile",
+                      petSitter: "Pierre L.",
+                      date: "8-10 Sept 2024",
+                      pet: "Luna",
+                      status: "Terminé",
+                      price: "120€",
+                      rating: 4
+                    },
+                    {
+                      id: 3,
+                      service: "Visite à domicile",
+                      petSitter: "Sophie M.",
+                      date: "2 Sept 2024",
+                      pet: "Milo",
+                      status: "Terminé",
+                      price: "35€",
+                      rating: 5
+                    }
+                  ].map((booking) => (
+                    <div key={booking.id} className="flex items-center justify-between p-4 border border-blue-200 rounded-lg bg-white">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                          <PawPrint className="w-6 h-6 text-blue-600" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-gray-900">{booking.service}</p>
+                          <p className="text-sm text-gray-600">Par {booking.petSitter} - {booking.pet}</p>
+                          <p className="text-sm text-gray-600">{booking.date}</p>
+                        </div>
+                      </div>
+                      <div className="text-right">
+                        <Badge variant="outline" className="mb-2 border-green-200 text-green-600">
+                          {booking.status}
+                        </Badge>
+                        <p className="text-sm font-medium text-gray-900">{booking.price}</p>
+                        <div className="flex items-center mt-1">
+                          {[...Array(5)].map((_, i) => (
+                            <Star
+                              key={i}
+                              className={`w-3 h-3 ${
+                                i < booking.rating ? 'text-yellow-400 fill-current' : 'text-gray-300'
+                              }`}
+                            />
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 text-center">
+                  <Button variant="outline" className="border-blue-200 text-blue-600 hover:bg-blue-50">
+                    Voir plus d'historique
+                  </Button>
                 </div>
               </CardContent>
             </Card>
