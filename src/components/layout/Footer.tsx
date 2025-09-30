@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-blue-600">DogWalking</span>
             </div>
             <p className="text-gray-600 text-sm mb-4">
-              Le plus grand réseau mondial de pet sitters et promeneurs de chiens 5 étoiles.
+              Le plus grand réseau mondial de promeneurs certifiés et promeneurs de chiens 5 étoiles.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-blue-600 transition-colors">

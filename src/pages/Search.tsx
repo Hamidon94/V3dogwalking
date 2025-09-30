@@ -189,7 +189,7 @@ const Search = () => {
                     <span className="text-sm">Seulement les Star Sitters</span>
                   </label>
                   <p className="text-xs text-gray-500 mt-1 ml-6">
-                    Pet sitters d'élite avec les meilleures notes
+                    Promeneurs certifiés d'élite avec les meilleures notes
                   </p>
                 </div>
 
@@ -246,7 +246,7 @@ const Search = () => {
             <div className="flex justify-between items-center mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900">
-                  Pet sitters près de vous
+                  Promeneurs certifiés près de vous
                 </h2>
                 <p className="text-gray-600">
                   {mockSitters.length} promeneur certifiés trouvés

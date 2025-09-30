@@ -24,7 +24,7 @@ const DogWalkingProtectSection = () => {
                 <CheckCircle className="w-6 h-6 text-dogwalking-green mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">
-                    Screened pet sitters
+                    Promeneurs certifiés vérifiés
                   </h3>
                   <p className="text-gray-600">
                     have already passed a third-party identity verification.
@@ -104,7 +104,7 @@ const DogWalkingProtectSection = () => {
                   
                   <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
                     <span className="text-gray-700">Identity Verification</span>
-                    <span className="font-semibold text-dogwalking-green">✓ All Sitters</span>
+                    <span className="font-semibold text-dogwalking-green">✓ All Promeneurs Certifiés</span>
                   </div>
                 </div>
               </div>
