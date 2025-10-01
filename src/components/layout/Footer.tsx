@@ -135,6 +135,33 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Propriétaires */}
+          <div>
+            <h3 className="text-gray-900 font-semibold mb-4">Propriétaires</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/owner-dashboard" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Mon tableau de bord
+                </Link>
+              </li>
+              <li>
+                <Link to="/owner-subscription" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Abonnements
+                </Link>
+              </li>
+              <li>
+                <Link to="/search" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Trouver un promeneur
+                </Link>
+              </li>
+              <li>
+                <Link to="/signup?type=owner" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Devenir propriétaire
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Entreprise */}
           <div>
             <h3 className="text-gray-900 font-semibold mb-4">Entreprise</h3>

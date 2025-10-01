@@ -32,6 +32,8 @@ import Careers from "./pages/Careers";
 import WalkTracking from "./pages/WalkTracking";
 import TestAccounts from "./pages/TestAccounts";
 import Blog from "./pages/Blog";
+import OwnerDashboard from "./pages/OwnerDashboard";
+import OwnerSubscription from "./pages/OwnerSubscription";
 
 const queryClient = new QueryClient();
 
@@ -64,6 +66,8 @@ const App = () => (
           <Route path="/walk-tracking/:bookingId" element={<WalkTracking />} />
           <Route path="/test-accounts" element={<TestAccounts />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/owner-dashboard" element={<OwnerDashboard />} />
+          <Route path="/owner-subscription" element={<OwnerSubscription />} />
           <Route path="/safety" element={<Safety />} />
           <Route path="/help" element={<Help />} />
           <Route path="/contact" element={<Contact />} />

@@ -62,10 +62,10 @@ const Login = () => {
           {/* Header */}
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">
-              Connexion
+              Connexion à votre compte
             </h1>
             <p className="text-gray-600">
-              Accédez à votre compte DogWalking
+              Accédez à votre espace personnel DogWalking
             </p>
           </div>
 

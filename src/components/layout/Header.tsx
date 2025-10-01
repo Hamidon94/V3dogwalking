@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="/dogwalking-logo.png" alt="DogWalking" className="w-16 h-16 border-0 outline-none ring-0" style={{border: 'none', outline: 'none'}} />
+            <img src="/dogwalking-logo-new.png" alt="DogWalking" className="w-10 h-10" />
             <div className="text-2xl font-bold text-blue-600">
               DogWalking
             </div>
@@ -53,6 +53,18 @@ const Header = () => {
 
           {/* Right side buttons */}
           <div className="hidden md:flex items-center space-x-4">
+            <Link to="/owner-subscription">
+              <Button variant="ghost" size="sm" className="text-gray-600">
+                Abonnement
+              </Button>
+            </Link>
+
+            <Link to="/owner-dashboard">
+              <Button variant="ghost" size="sm" className="text-gray-600">
+                Mon espace
+              </Button>
+            </Link>
+            
             <Button variant="ghost" size="sm" className="text-gray-600">
               <HelpCircle className="w-4 h-4 mr-1" />
               Aide
